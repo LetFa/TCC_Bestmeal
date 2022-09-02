@@ -1,0 +1,57 @@
+@media(max-width: 1069px) {
+    .news-input {
+        width: 70%;
+    }
+}
+@media(max-width: 990px) {
+    .news-input {
+        width: 60%;
+    }
+}
+@media(max-width: 716px) {
+    .news-input {
+        width: 70%;
+    }
+}
+@media(max-width: 528px) {
+    .news-input {
+        width: 60%;
+    }
+}
+@media(max-width: 436px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+@media (max-width:320px){
+    #company-img{
+        background-image: none !important;
+    }
+    #pattern-img{
+        margin-top: -250px !important;
+    }
+    #data-area{
+        margin-top: 500px !important;
+    }
+    #apply-area .apply-box{
+        padding: 30px;
+    }
+    #news-btn{
+        padding: 7px !important;
+    }
+    .user_card{
+        padding: 70px !important;
+    
+    }
+    .input-login{
+        margin-left: -50%;
+        margin-top: 90%;
+        width: 190%;
+    }
+    .input-log{
+        margin-left: -50%;
+        width: 191%;
+    }
+   
+}

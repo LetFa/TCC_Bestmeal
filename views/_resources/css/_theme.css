@@ -1,0 +1,67 @@
+.navbar-theme{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.nav-shadow {
+    box-shadow: 2px 2px 2px #bbb;
+}
+
+.roboto-slab {
+    font-family: 'Roboto Slab',sans-serif;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-color: #ffc21c !important;
+    padding: 20px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/56/56763.png') !important;
+    background-size: 18px;
+    border-radius: 10px;
+}
+
+.close-secret{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100000000;
+}
+
+.secret {
+    position: fixed;
+    top: 0;
+    z-index: 10000000;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+}
+
+.secret img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+@media(max-width: 768px) {
+    .secret img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: show-secret .3s ease-in-out;
+}
+
+@keyframes show-secret {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

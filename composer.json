@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Sistema\\" : "sistema"
+        },
+        "files": [
+            "sistema/Config.php"
+        ]
+    }
+}

@@ -1,0 +1,242 @@
+/*carousel*/
+
+ .carousel-item  img{
+    width: 100%; 
+ }
+/*logo*/
+.logo-bestmeal{
+ width: 80px;
+
+}
+
+.active {
+    color: #ffc21c !important;
+}
+
+.navbar-nav li .menu{
+    border-radius: 10px;
+    padding: 3px;
+    margin: 4px;
+    transition: all .4s;
+    border: 5px solid transparent; 
+    font-size: 17px;
+}
+.navbar-nav li .menu:hover{
+    color: #ffc21c !important;
+    border: 30%;  
+}
+.navbar-nav li .menu a:active{
+    background-color: #ffc21c;
+}
+
+/*lanche-area*/
+.btn-area{
+    margin: 5px;
+}
+.titulo-area{
+    margin-top: 120px;
+
+    font-family: 'Uchen', serif;
+}
+.lanche-area{
+    background-color: #f9f9f9;
+    margin-top: -50px !important;
+}
+.btn-center button{
+    text-align: center;
+}
+.btn-area{
+    background-color: #ffc21c;
+    border-radius: 10px;
+    color: black;
+}
+.btn-area:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: #ffc21c;
+}
+
+/*team-area*/
+.team-titulo{
+    margin-top: 40px;
+}
+.time-ste{
+    height: 390px !important;
+    margin-top: 1px !important;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+
+
+/*apply area*/
+#apply-area{
+    margin-top: 170px;
+    margin-bottom: 150px !important;
+    background-color: #f9f9f9;
+    height: 600px; 
+    width: 100%;
+}
+
+  
+  
+  #apply-area .apply-box {
+      text-align: center;
+      padding: 60px 50px !important; 
+  }
+  
+  #company-img {
+      background-image: url('../storage/lanches/lanches-banner.jpg') !important;
+      background-size: cover;
+ }
+  #pattern-img {
+      background-image: url('../storage/banner/banner-dark.jpg') !important;
+      background-position: end;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+  
+  #pattern-img h4, #pattern-img p {
+      color: #f9f9f9;
+  }
+  #pattern-img h4 {
+      margin-top: 8%;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+  }
+  #pattern-img p{
+      margin-bottom: 20px;
+  }
+  
+  #apply-btn {
+     display: block;
+     height: auto;
+     width: 180px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+     background-color: #ffc21c;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 30px;
+      border: 3px solid transparent;
+      transition: .5s;
+     text-decoration: none;
+     padding: 10px;
+  }
+  #apply-btn:hover {
+      text-decoration: none;
+      color: white;
+      background-color: transparent;
+      border-color: #ffc21c;
+  }
+  
+/*Circle-area*/
+.circle-box div {
+    padding: 30px 40px;
+}
+  
+.progressbar-text {
+      font-weight: bold;
+      font-size: 32px;
+}
+#data-area p {
+      color: #fff;
+      text-align: center;
+      font-size: 26px;
+      margin-top: 20px;
+      
+}
+#data-area {
+      background-image: url('https://images.pexels.com/photos/3738755/pexels-photo-3738755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed; 
+}
+  
+/*newsletter*/
+.area-news{
+    background-color: #ffc21c;
+    padding: 0px 100px;
+    margin-top: 130px;
+    display: block;
+    text-align: center;
+}
+
+
+#newsletter #call-btn {
+    background-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+}
+
+#email-input {
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #ffc21c;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+    position: relative;
+    top: -50px;
+}
+
+.form-newsletter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-input{
+    border: none;
+    padding: 8px;
+    border-radius: 30px;
+    width: 75%;
+    outline: none;
+}
+
+#news-btn {
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #ffc21c;
+    background-color: white;
+    color: #ffc21c;
+}
+
+#news-btn:hover {
+    background-color: black;
+    color: #ffc21c;
+}
+
+
+/*whats flutuando*/
+.gtm-whatsFlutuante a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #40c351;
+    width: 60px;
+    height: 61px;
+    border-radius: 100%;
+}
+.gtm-whatsFlutuante img {
+    width: 40px;
+}
+.gtm-whatsFlutuante {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+}
+
+.perfil-img {
+    border-radius: 50%;
+}
