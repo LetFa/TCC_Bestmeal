@@ -2,7 +2,7 @@
   <title>Página Inicial | Bestmeal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="/resources/storage/icone/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="<?= SITE?>/views/_resources/storage/icone/favicon" type="image/x-icon">
   <!---Links CSS-->
   <link rel="stylesheet" href="<?=asset('css/_theme.css')?>">
   <link rel="stylesheet" href="<?=asset('css/home.css')?>">
@@ -23,5 +23,4 @@
     <script src="<?=asset('js/bootstrap.min.js')?>" defer></script>
     <script src="<?=asset('js/4popper.min.js')?>" defer></script>
     <script src="<?=asset('js/bootstrap.bundle.js')?>" defer></script>
-
 </head>

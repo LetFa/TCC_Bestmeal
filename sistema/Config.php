@@ -2,7 +2,7 @@
 
 define("SITE", 'http://localhost/TCC_Bestmeal');
 
-function asset(string $path): string {
-    $file = SITE."/views/_resources/{$path}";
-    return $file;
+function asset(string $pasta): string {
+    $arquivo = SITE . "/views/_resources/{$pasta}";
+    return $arquivo;
 }

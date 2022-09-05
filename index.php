@@ -1,4 +1,4 @@
-<?php require __DIR__ ."/vendor/autoload.php" ?>
+<?php require __DIR__ ."/vendor/autoload.php";?>
 <!doctype html>
 <html lang="pt-br">
     <?php require __DIR__ ."/views/home/componentes/head.php" ?>
@@ -190,8 +190,8 @@
  
 
   <?php require __DIR__ ."/views/home/componentes/footer.php" ?>
-  <script src="<?=asset('separate/progressBar.min.js')?>" defer></script>
-    <script src="<?=asset('separate/circle.js')?>" defer></script>
+  <script src="<?=asset('separate/progressBar.min.js')?>"></script>
+  <script src="<?=asset('separate/circle.js')?>"></script>
 </body>
 
 </html>
