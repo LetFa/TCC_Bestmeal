@@ -1,21 +1,15 @@
+<?php require __DIR__ . "/vendor/autoload.php" ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Usuário | Projeto para web com PHP</title>
-    <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
-</head>
+     
+    <?php require __DIR__ . '/views/home/componentes/head.php' ?>
+
 <body>
+    <?php require __DIR__ . "/views/home/componentes/navbar.php" ?>
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <?php  include 'includes/topo.php'; ?>
-            </div>
-        </div>
         <div class="row" style="min-height: 500px;">
-           <div class="col-md-12">
-               <?php include 'includes/menu.php'; ?>
-           </div>
            <div class="col-md-10" style="padding-top: 50px;">
            <?php 
               require_once 'includes/funcoes.php';        
@@ -40,9 +34,9 @@
               }
 
            ?>
-           <h2>Usuário</h2>
-           <form method="post" action="core/usuario_repositorio.php">
-               <input type="hidden" name="acao" value="<?php echo empty($id) ? 'insert' : 'update' ?>">
+           <h2 class="text-center">Cadastre-se Conosco</h2>
+           <form method="post" action="core/usuario_repositorio.php" style="width: 50%; margin: auto;">
+               <input  type="hidden"  name="acao" value="<?php echo empty($id) ? 'insert' : 'update' ?>">
                <input type="hidden" name="id" value="<?php echo $entidade['id'] ?? '' ?>">
              <div class="form-group">
                 <label for="nome">Nome</label>
@@ -58,18 +52,13 @@
                 <input class="form-control" type="password" require="required" id="senha" name="senha">
              </div>
              <?php endif; ?>
-             <div class="text-right">
-                <button class="btn bnt-dark" type="submit">Salvar</button>
+             <div class="text-center">
+                <button class="btn btn-danger mt-5" type="submit">Salvar</button>
              </div>
            </form>
            </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <?php include 'includes/rodape.php'; ?>
-            </div>
-        </div>
     </div>
-    <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <?php include __DIR__ . '/views/home/componentes/footer.php' ?>
 </body>
 </html>

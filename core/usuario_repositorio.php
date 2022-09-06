@@ -26,6 +26,9 @@ switch($acao){
             'usuario',
             $dados
         );
+        
+        header('location: ../index.php?criado=sucesso');
+        die;
 
         break;
 
@@ -71,7 +74,8 @@ switch($acao){
                       }
                     }
                  }
-                    
+                 header('location: ../index.php?logado=sucesso');
+                 die;
                  break;
 
                  case 'logout':

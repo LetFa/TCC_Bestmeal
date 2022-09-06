@@ -6,11 +6,9 @@
 
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
   
-   
-
 <div id="app">
     <div>
-        <img class="w-100 " src="<?= SITE ?>/resources/assets/storage/banner/tela-cardapio.png" alt="">
+        <img class="w-100 " src="<?= asset('') ?>/resources/assets/storage/banner/tela-cardapio.png" alt="">
     </div>
     <div class="container">
         <h2 class="text-center mt-5 app-titulo">Monte seu lanche</h2>

@@ -188,10 +188,31 @@
     </div>
   </main>
  
+  <?php if(isset($_GET['criado'])) { ?>
+    <?php if($_GET['criado'] == 'sucesso') { ?>
+      <div class="usuario-criado">
+        <div class="alert alert-success text-center">
+          <p class="fs-3">Usuário criado com sucesso</p>
+          <a href="<?=SITE?>/login_formulario.php" class="fs-4">Clique aqui para entrar</a>
+        </div>
+    </div>
+    <?php } ?>
+  <?php } ?>
+
+  <?php if(isset($_GET['logado'])) { ?>
+    <?php if($_GET['logado'] == 'sucesso') { ?>
+      <div class="usuario-criado">
+        <div class="alert alert-info text-center">
+          <p class="fs-3">Olá <?=$_SESSION['nome']?></p>
+          <a href="<?=SITE?>/" class="fs-4">Fechar</a>
+        </div>
+    </div>
+    <?php } ?>
+  <?php } ?>
 
   <?php require __DIR__ ."/views/home/componentes/footer.php" ?>
-  <script src="<?=asset('separate/progressBar.min.js')?>"></script>
-  <script src="<?=asset('separate/circle.js')?>"></script>
+  <script src="<?=asset('separate/progressBar.min.js')?>" defer></script>
+  <script src="<?=asset('separate/circle.js')?>" defer></script>
   
 </body>
 

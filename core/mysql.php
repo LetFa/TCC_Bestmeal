@@ -161,11 +161,12 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
     $campo_criterio[] = $nome_campo;
 
     $$nome_campo = $dado;
+
   } 
-  
+
 
   $instrucao = select($entidade, $campos, $coringa_criterio, $ordem);
- 
+
   $conexao = conecta();
 
   $stmt = mysqli_prepare($conexao, $instrucao);
@@ -175,8 +176,6 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
     $comando .= "'" . implode('', $tipo). "'";
     $comando .= ', $' . implode(', $', $campo_criterio);
     $comando .= ');';
-
-   
 
     eval($comando);
   }
@@ -196,6 +195,8 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
   desconecta ($conexao);
 
   $retorno = $retorno;
+
+  $_SESSION['nome'] = $retorno[0]['nome'];
 
   return $retorno;
 
