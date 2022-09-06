@@ -10,7 +10,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner ">
         <div class="carousel-item active">
-          <img src="<?=asset('storage/banner/banner1.png')?>" class="d-block " id="Slide 1" alt="..."
+          <img src="<?= asset('storage/banner/banner1.png')?>" class="d-block " id="Slide 1" alt="..."
             style="height: 650px;">
         </div>
         <div class="carousel-item">
