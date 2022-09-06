@@ -10,7 +10,7 @@
 
     <div class="container">
         <div class="row" style="min-height: 500px;">
-           <div class="col-md-10" style="padding-top: 50px;">
+           <div class="col-md-10 offset-1" style="padding-top: 50px;">
            <?php 
               require_once 'includes/funcoes.php';        
               require_once 'core/conexao_mysql.php';
@@ -59,6 +59,6 @@
            </div>
         </div>
     </div>
-    <?php include __DIR__ . '/views/home/componentes/footer.php' ?>
+
 </body>
 </html>

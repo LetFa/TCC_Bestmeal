@@ -1,4 +1,8 @@
-<?php require __DIR__ ."/vendor/autoload.php";?>
+<?php 
+    require __DIR__ ."/vendor/autoload.php";
+    require __DIR__ ."/sistema/bloqueio.php";
+?>
+
 <!doctype html>
 <html lang="pt-br">
     <?php require __DIR__ ."/views/home/componentes/head.php" ?>
@@ -15,11 +19,11 @@
         </div>
         <div class="carousel-item">
           <img src="<?=asset('storage/banner/banner2.png')?>" class="d-block" id="Slide 2" alt="..."
-            style="height: 600px;">
+            style="height: 650px;">
         </div>
         <div class="carousel-item">
           <img src="<?=asset('storage/banner/banner3.png')?>" class="d-block" id="Slide 3" alt="..."
-            style="height: 600px;">
+            style="height: 650px;">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

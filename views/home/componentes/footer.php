@@ -129,7 +129,6 @@
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Bestmeal</a>
       </div>
     </footer>
-
     
     <script src="<?=asset('js/jquery.min.js')?>" ></script>
     <script src="<?=asset('js/popper.min.js')?>"></script>

@@ -7,6 +7,7 @@ require_once 'sql.php';
 require_once 'mysql.php';
 $salt = '$exemplosaltifsp';
 
+
 foreach($_POST as $indice => $dado){
     $$indice = limparDados($dado);
 }
@@ -27,7 +28,7 @@ switch($acao){
             $dados
         );
         
-        header('location: ../index.php?criado=sucesso');
+        header('location: ../index.php?criado=sucesso?msg=Criado com sucesso');
         die;
 
         break;

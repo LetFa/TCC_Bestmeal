@@ -1,4 +1,8 @@
-<?php require __DIR__ ."/vendor/autoload.php" ?>
+<?php 
+    require __DIR__ ."/vendor/autoload.php";
+    require __DIR__ ."/sistema/middleware.php";
+?>
+
 <!doctype html>
 <html lang="pt-br">
     <?php require __DIR__ ."/views/home/componentes/head.php" ?>
