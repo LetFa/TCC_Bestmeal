@@ -11,7 +11,7 @@
       <div class="carousel-inner ">
         <div class="carousel-item active">
           <img src="<?=asset('storage/banner/banner1.png')?>" class="d-block " id="Slide 1" alt="..."
-            style="height: 600px;">
+            style="height: 650px;">
         </div>
         <div class="carousel-item">
           <img src="<?=asset('storage/banner/banner2.png')?>" class="d-block" id="Slide 2" alt="..."
@@ -192,6 +192,7 @@
   <?php require __DIR__ ."/views/home/componentes/footer.php" ?>
   <script src="<?=asset('separate/progressBar.min.js')?>"></script>
   <script src="<?=asset('separate/circle.js')?>"></script>
+  
 </body>
 
 </html>
