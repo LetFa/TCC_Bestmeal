@@ -63,7 +63,6 @@ switch($acao){
                     ['id','nome','email','senha','adm'],
                     $criterio
                  );
-
                   
                  if(count($retorno) > 0){
                     if(crypt($senha,$salt)  == $retorno[0] ['senha']){
@@ -75,6 +74,7 @@ switch($acao){
                       }
                     }
                  }
+
                  header('location: ../index.php?logado=sucesso');
                  die;
                  break;

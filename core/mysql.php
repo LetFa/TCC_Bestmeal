@@ -196,7 +196,7 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
 
   $retorno = $retorno;
 
-  $_SESSION['email'] = $retorno[0]['email'];
+  $_SESSION['nome'] = $retorno[0]['nome'];
 
   return $retorno;
 
