@@ -8,6 +8,7 @@ const App = new Vue({
             pao: null,
             queijo: null,
             carne: null,
+            salada: null,
             message: null
         }
     },
@@ -32,12 +33,20 @@ const App = new Vue({
 
             if(this.step == 3) {
                 if(!this.form.carne) {
-                    this.errors = 'Insira seu email para prosseguir' 
+                    this.errors = 'Selecione sua carne' 
                     return false
                 }
             }
+            
+            if(this.step == 4) {
+                if(!this.form.salada) {
+                    this.errors = 'Selecione sua salada' 
+                    return false
+                }
+            }
+            
 
-            if(this.step == 4){
+            if(this.step == 5){
                 if(!this.form.message) {
                     this.errors = 'Insira sua mensagem para prosseguir' 
                     return false

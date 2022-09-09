@@ -6,6 +6,8 @@
 
 <body>
     <?php require __DIR__ . "/views/home/componentes/navbar.php" ?>
+
+    <div class="area-login">
       <div class="container">
            <div class="col-md-6 offset-md-3" style="padding-top: 50px;">
              <h1 class="text-center">Login</h1>
@@ -28,6 +30,7 @@
            </div>
         </div>
       </div> 
+      </div>
 
 </body>
 </html>

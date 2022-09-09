@@ -15,15 +15,15 @@
       <div class="carousel-inner ">
         <div class="carousel-item active">
           <img src="<?= asset('storage/banner/banner1.png')?>" class="d-block " id="Slide 1" alt="..."
-            style="height: 650px;">
+            style="height: 100%;">
         </div>
         <div class="carousel-item">
           <img src="<?=asset('storage/banner/banner2.png')?>" class="d-block" id="Slide 2" alt="..."
-            style="height: 650px;">
+            style="height: 100%;">
         </div>
         <div class="carousel-item">
           <img src="<?=asset('storage/banner/banner3.png')?>" class="d-block" id="Slide 3" alt="..."
-            style="height: 650px;">
+            style="height: 100%;">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

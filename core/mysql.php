@@ -193,10 +193,13 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
   mysqli_stmt_close($stmt);
 
   desconecta ($conexao);
-
+  
   $retorno = $retorno;
+   
 
   $_SESSION['nome'] = $retorno[0]['nome'];
+  
+  
 
   return $retorno;
 
