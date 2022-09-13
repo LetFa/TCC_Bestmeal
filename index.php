@@ -7,7 +7,6 @@
 <html lang="pt-br">
     <?php require __DIR__ ."/views/home/componentes/head.php" ?>
 <body>
-
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
     <main>
     <!--Carousel-->

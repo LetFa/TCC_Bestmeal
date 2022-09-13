@@ -31,8 +31,8 @@
 
                                     <div class="row mb-4">
                                         <div class="col d-flex justify-content-center">
-                                            <div class="form-group mostrar-senha-login">
-                                                <input class="input-mostrar-senha" type="checkbox"  id="mostrar-senha-login" require="required" checked />
+                                            <div class="form-group mostrar-senha">
+                                                <input class="input-mostrar-senha" type="checkbox"  id="mostrar-senha-login" require="required">
                                                 <label class="label-mostrar-senha" for="mostrar-senha-login">Mostrar Senha</label>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@
                                         </div>
                                     </div>
 
-                                    <button type="button" class="btn btn-warning w-50" style="margin-left:22%;">Acessar</button>
+                                    <button type="submit" class="btn btn-warning w-50" style="margin-left:22%;">Acessar</button>
                                 </form>
                             </div>
                         </div>
@@ -50,5 +50,22 @@
                 </div>
             </div>
         </section>
+
+        <script>
+          
+          let mostrarSenha = document.getElementById("mostrar-senha-login");
+          mostrarSenha.addEventListener('click', function(){
+           
+            let senha = document.getElementById("senha");
+
+            if(senha.type == 'password'){
+               senha.type = 'text'
+            }else{
+                senha.type = 'password'
+            }
+          });
+
+
+        </script>
 </body>
 </html>

@@ -195,11 +195,9 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
   desconecta ($conexao);
   
   $retorno = $retorno;
-   
+  
 
   $_SESSION['nome'] = $retorno[0]['nome'];
-  
-  
 
   return $retorno;
 
