@@ -2,7 +2,7 @@ const App = new Vue({
     el: "#app",
     data: {
         step: 1,
-        totalsteps: 5,
+        totalsteps: 6,
         errors: [],
         form: {
             pao: null,

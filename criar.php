@@ -254,21 +254,21 @@
                                     <input v-model="form.carne" type="radio" id="carne7" value="Bacon Frito">
                                     <label for="carne7">
                                         <img class=" border rounded-3" src="<?= asset('storage/cardapio/carnes/carne7.png') ?>">
-                                        <p>Bacon Frito</span>
+                                        <p style="margin-left: 90px;">Bacon Frito</span>
                                     </label>
                                 </div>
                                 <div class="col-md-4 wrapper carne">
-                                    <input v-model="form.carne" type="radio" id="carne8" value="Bife Frito">
+                                    <input v-model="form.carne" type="radio" id="carne8" value="Frango Desfiado">
                                     <label for="carne8">
                                         <img class=" border rounded-3" src="<?= asset('storage/cardapio/carnes/carne8.png') ?>">
-                                        <p>Bife Frito</span>
+                                        <p style="margin-left: 85px;">Frango Desfiado</span>
                                     </label>
                                 </div>
                                 <div class="col-md-4 wrapper carne">
                                     <input v-model="form.carne" type="radio" id="carne9" value="File Mion">
                                     <label for="carne9">
                                         <img class="border rounded-3" src="<?= asset('storage/cardapio/carnes/carne9.png') ?>">
-                                        <p>File Mion</span>
+                                        <p style="margin-left: 110px;">File Mion</span>
                                     </label>
                                 </div>
                                 <div class="col-md-4 wrapper carne">
@@ -279,17 +279,17 @@
                                     </label>
                                 </div>
                                 <div class="col-md-4 wrapper carne">
-                                    <input v-model="form.carne" type="radio" id="carne11" value="Carne Contrafilé">
+                                    <input v-model="form.carne" type="radio" id="carne11" value="Salsicha">
                                     <label for="carne11">
                                         <img class="border rounded-3" src="<?= asset('storage/cardapio/carnes/carne11.png') ?>">
-                                        <p>Carne Contrafilé</span>
+                                        <p style="margin-left: 110px;">Salsicha</span>
                                     </label>
                                 </div>
                                 <div class="col-md-4 wrapper carne">
-                                    <input v-model="form.carne" type="radio" id="carne12" value="Carne Alcatra">
+                                    <input v-model="form.carne" type="radio" id="carne12" value="Calabresa">
                                     <label for="carne12">
                                         <img class="border rounded-3" src="<?= asset('storage/cardapio/carnes/carne12.png') ?>">
-                                        <p>Carne Alcatra</span>
+                                        <p style="margin-left: 110px;">Calabresa</span>
                                     </label>
                                 </div>
                             </div>
@@ -300,43 +300,108 @@
                     <h5 class="mt-3 app-subtitulo">Escolha sua salada</h5>
                         <div class="container">
                             <div class="row">
+
                                 <div class="col-md-4 wrapper salada">
                                     <input v-model="form.salada" type="radio" id="salada1" value="tomate">
                                     <label for="salada1">
                                         <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada1.png') ?>" style="width:88%;">
-                                        <p style="margin-left:120px;">Tomate</span>
+                                        <p style="margin-left:110px;">Tomate</span>
                                     </label>
                                 </div>
-                            <div class="col-md-4 wrapper">
-                                <input v-model="form.salada" type="radio" id="salada2" value="cenoura">
-                                <label for="salada2">
-                                    <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada2.png') ?>" style="width:80%;margin-left:30px;">
-                                    <p style="margin-left:150px;">Cenoura</span>
-                               </label>
-                            </div>
-                            <div class="col-md-4 wrapper">
-                                <input v-model="form.salada" type="radio" id="salada3" value="alface">
-                                <label for="salada3">
-                                    <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada3.png') ?>" style="width:80%;">
-                                    <p style="margin-left:150px;">Alface</span>
-                               </label>
-                            </div>
-                            <div class="col-md-4 wrapper">
-                                <input v-model="form.salada" type="radio" id="salada4" value="repolho">
-                                <label for="salada4">
-                                    <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada4.png') ?>" style="width:80%;">
-                                    <p style="margin-left:120px;">Repolho verde</span>
-                               </label>
-                            </div>
-                        <div class="col-md-4 wrapper">
-                                <input v-model="form.salada" type="radio" id="salada5" value="repolho roxo">
-                                <label for="salada5">
-                                    <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada5.png') ?>" style="width:80%;margin-left:-10px;">
-                                    <p style="margin-left:100px;">Repolho Roxo</span>
-                               </label>
-                            </div>
-                         </div>
-                        </div> 
+
+                                <div class="col-md-4 wrapper">
+                                    <input v-model="form.salada" type="radio" id="salada2" value="cenoura">
+                                    <label for="salada2">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada2.png') ?>" style="width:80%;margin-left:30px;">
+                                        <p style="margin-left:140px;">Cenoura</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper">
+                                    <input v-model="form.salada" type="radio" id="salada3" value="alface">
+                                    <label for="salada3">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada3.png') ?>" style="width:80%;">
+                                        <p style="margin-left:120px;">Alface</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper">
+                                    <input v-model="form.salada" type="radio" id="salada4" value="repolho verde">
+                                    <label for="salada4">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada4.png') ?>" style="width:80%;">
+                                        <p style="margin-left:85px;">Repolho verde</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper">
+                                    <input v-model="form.salada" type="radio" id="salada5" value="Cebola Branca">
+                                    <label for="salada5">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada6.png') ?>" style="width:80%;">
+                                        <p style="margin-left:85px;">Cebola Branca</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada6" value="repolho roxo">
+                                        <label for="salada6">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada5.png') ?>" style="width:80%;margin-left:-10px;">
+                                            <p style="margin-left:85px;">Repolho Roxo</span>
+                                        </label>
+                                    </div>
+
+                                <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada7" value="Cebola Roxa">
+                                        <label for="salada7">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada7.png') ?>" style="width:80%;margin-left:-10px;">
+                                            <p style="margin-left:85px;">Cebola Roxo</span>
+                                        </label>
+                                    </div>
+
+
+                                <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada8" value="Plices">
+                                        <label for="salada8">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada8.png') ?>" style="width:80%;margin-left:10px;">
+                                            <p style="margin-left:130px;">Plices</span>
+                                        </label>
+                                    </div>
+
+                                <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada9" value="Ervilha">
+                                        <label for="salada9">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada9.png') ?>" style="width:80%;margin-left:10px;">
+                                            <p style="margin-left:130px;">Ervilha</span>
+                                        </label>
+                                    </div>
+                           
+
+                                <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada10" value="Milho">
+                                        <label for="salada10">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada10.png') ?>" style="width:80%;margin-left:10px;">
+                                            <p style="margin-left:130px;">Milho</span>
+                                        </label>
+                                    </div>
+                                
+                                    <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada11" value="Aceitona Verde">
+                                        <label for="salada11">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada11.png') ?>" style="width:80%;margin-left:10px;">
+                                            <p style="margin-left:100px;">Aceitona Verde</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-md-4 wrapper">
+                                        <input v-model="form.salada" type="radio" id="salada12" value="Aceitona Preta">
+                                        <label for="salada12">
+                                            <img class="border rounded-3" src="<?= asset('storage/cardapio/salada/salada12.png') ?>" style="width:80%;margin-left:10px;">
+                                            <p style="margin-left:100px;">Aceitona Preta</span>
+                                        </label>
+                                    </div>
+                                </div> 
+
+
+                            </div> 
                     </section>
 
                     <section v-if="step == 5">
@@ -349,13 +414,14 @@
                         <p>Pão escolhido: {{form.pao}}</p>
                         <p>Queijo escolhido: {{form.queijo}}</p>
                         <p>Carne escolhido: {{form.carne}}</p>
+                        <p>Salada escolhido: {{form.salada}}</p>
                         <p>Nome do lanche: {{form.message}}</p>
                     </section>
 
                     <div class="mt-3 text-end btn-cardapio">
                         <button class="btn btn-warning" v-if="step != 1" @click.prevent="prevStep">Anterior</button>
                         <button class="btn btn-warning" v-if="step != totalsteps" @click.prevent="nextStep">Próximo</button>
-                        <button class="btn btn-warning" v-if="step == 5" @click.prevent="send">Fazer Pedido!</button>
+                        <button class="btn btn-warning" v-if="step == 6" @click.prevent="send">Fazer Pedido!</button>
                     </div>
 
                 </form>
