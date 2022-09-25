@@ -2,13 +2,14 @@ const App = new Vue({
     el: "#app",
     data: {
         step: 1,
-        totalsteps: 6,
+        totalsteps: 7,
         errors: [],
         form: {
             pao: null,
             queijo: null,
             carne: null,
             salada: null,
+            frito: null,
             message: null
         }
     },
@@ -44,9 +45,16 @@ const App = new Vue({
                     return false
                 }
             }
+
+            if(this.step == 5) {
+                if(!this.form.frito) {
+                    this.errors = 'Selecione sua fritura' 
+                    return false
+                }
+            }
             
 
-            if(this.step == 5){
+            if(this.step == 6){
                 if(!this.form.message) {
                     this.errors = 'Insira sua mensagem para prosseguir' 
                     return false

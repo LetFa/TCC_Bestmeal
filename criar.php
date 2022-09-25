@@ -405,18 +405,128 @@
                     </section>
 
                     <section v-if="step == 5">
+                    <h5 class="mt-3 app-subtitulo">Escolha seu frito</h5>
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito1" value="Cebola Frita">
+                                    <label for="frito1">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito1.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Cebola Frita</span>
+                                    </label>
+                                </div>
+                            
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito2" value="Batata Frita">
+                                    <label for="frito2">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito2.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Batata Frita</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito3" value="Peixe Frito">
+                                    <label for="frito3">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito3.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Peixe Frito</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito4" value="Mandioca Frita">
+                                    <label for="frito4">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito4.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:100px;">Mandioca Frita</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito5" value="Frango Frito">
+                                    <label for="frito5">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito5.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Frango Frito</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito6" value="Carne de Porco">
+                                    <label for="frito6">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito6.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Carne de Porco</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito7" value="Nugget de Frango">
+                                    <label for="frito7">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito7.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:93px;">Nugget de Frango</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito8" value="Camarão Frito">
+                                    <label for="frito8">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito8.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Camarão Frito</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito9" value="Calabresa Frita">
+                                    <label for="frito9">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito9.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Calabresa Frita</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito10" value="Ovo Frito">
+                                    <label for="frito10">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito10.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Ovo Frito</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito11" value="Batata com Cheddar">
+                                    <label for="frito11">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito11.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:90px;">Batata com Cheddar</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-4 wrapper frito">
+                                    <input v-model="form.frito" type="radio" id="frito12" value="Kibe">
+                                    <label for="frito12">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/frito/frito12.jpeg') ?>" style="width:88%;">
+                                        <p style="margin-left:140px;">Kibe</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>        
+                    </section>
+
+                    <section v-if="step == 6">
                         <h5>De um nome para a sua criação</h3>
                             <textarea v-model="form.message" placeholder="Insira aqui " class="form-control"></textarea>
                     </section>
 
-                    <section v-if="step == 6" class="text-center">
+                    <section v-if="step == 7" class="text-center">
                         <h4 class="mt-5">Resumo do pedido</h4>
                         <p>Pão escolhido: {{form.pao}}</p>
                         <p>Queijo escolhido: {{form.queijo}}</p>
                         <p>Carne escolhido: {{form.carne}}</p>
                         <p>Salada escolhido: {{form.salada}}</p>
+                        <p>Frito escolhido: {{form.frito}}</p>
                         <p>Nome do lanche: {{form.message}}</p>
                     </section>
+
+                    
+                   
+
 
                     <div class="mt-3 text-end btn-cardapio">
                         <button class="btn btn-warning" v-if="step != 1" @click.prevent="prevStep">Anterior</button>
