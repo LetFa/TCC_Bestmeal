@@ -508,19 +508,119 @@
                             </div>
                         </div>        
                     </section>
-
+                    
                     <section v-if="step == 6">
+                    <h5 class="mt-3 app-subtitulo">Escolha seu molho</h5>
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho1" value="Molho Ketchup">
+                                    <label for="molho1">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho1.png') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Molho Ketchup</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho2" value="Maionese">
+                                    <label for="molho2">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho2.png') ?>" style="width:88%;">
+                                        <p style="margin-left:140px;">Maionese</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho3" value="Mostarda">
+                                    <label for="molho3">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho3.png') ?>" style="width:88%;">
+                                        <p style="margin-left:140px;">Mostarda</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho4" value="Barbecue">
+                                    <label for="molho4">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho4.png') ?>" style="width:88%;">
+                                        <p style="margin-left:140px;">Barbecue</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho5" value="Molho de Alho">
+                                    <label for="molho5">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho5.png') ?>" style="width:88%;">
+                                        <p style="margin-left:120px;">Molho de Alho</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho6" value="Molho de Pimenta">
+                                    <label for="molho6">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho6.png') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Molho de Pimenta</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho7" value="Molho Chedder">
+                                    <label for="molho7">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho7.png') ?>" style="width:88%;">
+                                        <p style="margin-left:110px;">Molho Chedder</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho8" value="Molho Golf">
+                                    <label for="molho8">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho8.png') ?>" style="width:88%;">
+                                        <p style="margin-left:140px;">Molho Golf</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho9" value="Molho Gorgonzola">
+                                    <label for="molho9">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho9.png') ?>" style="width:88%;">
+                                        <p style="margin-left:120px;">Molho Gorgonzola</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho10" value="Maionese vegano">
+                                    <label for="molho10">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho10.png') ?>" style="width:88%;">
+                                        <p style="margin-left:120px;">Maionese Vegano</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho11" value="Molho vegano">
+                                    <label for="molho11">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho11.png') ?>" style="width:88%;">
+                                        <p style="margin-left:120px;">Molho Vegano</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 wrapper molho">
+                                    <input v-model="form.molho" type="radio" id="molho12" value="Molho Mexicano">
+                                    <label for="molho12">
+                                        <img class="border rounded-3" src="<?= asset('storage/cardapio/molhos/molho12.png') ?>" style="width:88%;">
+                                        <p style="margin-left:120px;">Molho mexicano</span>
+                                    </label>
+                                </div>
+
+
+
+                            </div>
+                        </div>        
+                    </section>
+
+
+
+
+                    <section v-if="step == 7">
                         <h5>De um nome para a sua criação</h3>
                             <textarea v-model="form.message" placeholder="Insira aqui " class="form-control"></textarea>
                     </section>
 
-                    <section v-if="step == 7" class="text-center">
+                    <section v-if="step == 8" class="text-center">
                         <h4 class="mt-5">Resumo do pedido</h4>
                         <p>Pão escolhido: {{form.pao}}</p>
                         <p>Queijo escolhido: {{form.queijo}}</p>
                         <p>Carne escolhido: {{form.carne}}</p>
                         <p>Salada escolhido: {{form.salada}}</p>
                         <p>Frito escolhido: {{form.frito}}</p>
+                        <p>Molho escolhido: {{form.molho}}</p>
                         <p>Nome do lanche: {{form.message}}</p>
                     </section>
 
@@ -531,7 +631,7 @@
                     <div class="mt-3 text-end btn-cardapio">
                         <button class="btn btn-warning" v-if="step != 1" @click.prevent="prevStep">Anterior</button>
                         <button class="btn btn-warning" v-if="step != totalsteps" @click.prevent="nextStep">Próximo</button>
-                        <button class="btn btn-warning" v-if="step == 6" @click.prevent="send">Fazer Pedido!</button>
+                        <button class="btn btn-warning" v-if="step == 8" @click.prevent="send">Fazer Pedido!</button>
                     </div>
 
                 </form>

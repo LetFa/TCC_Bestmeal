@@ -2,7 +2,7 @@ const App = new Vue({
     el: "#app",
     data: {
         step: 1,
-        totalsteps: 7,
+        totalsteps: 8,
         errors: [],
         form: {
             pao: null,
@@ -10,6 +10,7 @@ const App = new Vue({
             carne: null,
             salada: null,
             frito: null,
+            molho: null,
             message: null
         }
     },
@@ -52,9 +53,16 @@ const App = new Vue({
                     return false
                 }
             }
+
+            if(this.step == 6) {
+                if(!this.form.molho) {
+                    this.errors = 'Selecione seu molho' 
+                    return false
+                }
+            }
             
 
-            if(this.step == 6){
+            if(this.step == 7){
                 if(!this.form.message) {
                     this.errors = 'Insira sua mensagem para prosseguir' 
                     return false
