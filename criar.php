@@ -32,52 +32,52 @@
                         <br>
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao1">
-                        <label class="form-check-label text-white" for="pao1">Pão de Hambúrguer</label>
+                        <label class="form-check-label text-white" for="pao1"> Hambúrguer <span class="text-warning">(R$ 10,00)</span></label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao2">
-                        <label class="form-check-label text-white" for="pao2">Pão Brioche</label>
+                        <label class="form-check-label text-white" for="pao2">Brioche</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao3">
-                        <label class="form-check-label text-white" for="pao3">Pão Australiano</label>
+                        <label class="form-check-label text-white" for="pao3">Australiano</label>
                         </div>
                 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao4">
-                        <label class="form-check-label text-white" for="pao4">Pão Bengala</label>
+                        <label class="form-check-label text-white" for="pao4">Bengala</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao5">
-                        <label class="form-check-label text-white" for="pao5">Pão de Cebola</label>
+                        <label class="form-check-label text-white" for="pao5">Cebola</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao6">
-                        <label class="form-check-label text-white" for="pao6">Pão  Francês</label>
+                        <label class="form-check-label text-white" for="pao6">Francês</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao7">
-                        <label class="form-check-label text-white" for="pao7">Pão de Batata</label>
+                        <label class="form-check-label text-white" for="pao7">Batata</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao8">
-                        <label class="form-check-label text-white" for="pao8">Pão de Leite</label>
+                        <label class="form-check-label text-white" for="pao8">Leite</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao9">
-                        <label class="form-check-label text-white" for="pao9">Pão de Forma</label>
+                        <label class="form-check-label text-white" for="pao9">Forma</label>
                         </div>
 
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="pao" id="pao" value="pao10">
-                        <label class="form-check-label text-white" for="pao10">Pão Alentejano</label>
+                        <label class="form-check-label text-white" for="pao10">Alentejano</label>
                         </div>
                         
                     </div>
@@ -88,27 +88,27 @@
                     
                         <div class="form-check mt-3">
                             <input class="form-check-input" type="checkbox" value="queijo1" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Mussarela</label>
+                            <label class="form-check-label text-white" for="queijo">Mussarela</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo2" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Parmesão</label>
+                            <label class="form-check-label text-white" for="queijo">Parmesão</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo3" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Prato</label>
+                            <label class="form-check-label text-white" for="queijo"> Prato</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo4" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Gorgonzola</label>
+                            <label class="form-check-label text-white" for="queijo">Gorgonzola</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo5" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Cheddar</label>
+                            <label class="form-check-label text-white" for="queijo">Cheddar</label>
                         </div>
 
                         <div class="form-check">
@@ -118,22 +118,22 @@
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo7" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Provolone</label>
+                            <label class="form-check-label text-white" for="queijo">Provolone</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo8" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Edam</label>
+                            <label class="form-check-label text-white" for="queijo">Edam</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo9" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Ricota</label>
+                            <label class="form-check-label text-white" for="queijo">Ricota</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="queijo10" id="queijo">
-                            <label class="form-check-label text-white" for="queijo">Queijo Mascarpone</label>
+                            <label class="form-check-label text-white" for="queijo">Mascarpone</label>
                         </div>
 
                     </div>
@@ -144,7 +144,7 @@
 
                         <div class="form-check mt-3">
                             <input class="form-check-input" type="checkbox" value="salada1" id="salada">
-                            <label class="form-check-label text-white" for="salada">Alface</label>
+                            <label class="form-check-label text-white" for="salada">Alface <span class="text-warning">(R$ 10,00)</span></label>
                         </div>
 
                         <div class="form-check">
