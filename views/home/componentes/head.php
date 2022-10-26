@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="<?=asset('css/esqueceu_senha.css')?>">
   <link rel="stylesheet" href="<?= asset('separate/app.css')?>">
 
+  <!--icon bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
   <script src="<?=asset('js/bootstrap.min.js')?>" defer></script>
 
 </head>

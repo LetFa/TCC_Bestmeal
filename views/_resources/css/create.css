@@ -2,3 +2,31 @@
     width: 30%;
     height: 30%;
 }
+
+.form-row{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid transparent;
+    background-color: rgba(187, 187, 187, 0.269);
+    margin-top: 2rem;
+}
+
+.form-check-input:checked {
+    background-color: #ffc21c;
+    border-color: #ffc21c;
+}
+
+.fundo-pedido{
+    background-image: url('https://images.pexels.com/photos/1556698/pexels-photo-1556698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label {
+    font-weight: 500;
+}
+.form-pedido{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
