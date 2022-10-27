@@ -5,26 +5,33 @@
 
 .form-row{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: 2px solid transparent;
-    background-color: rgba(187, 187, 187, 0.269);
     margin-top: 2rem;
 }
-
+.fundo-cinza{
+    background-color: rgba(187, 187, 187, 0.479);
+    padding: 10px 10px;
+}
 .form-check-input:checked {
     background-color: #ffc21c;
     border-color: #ffc21c;
 }
 
+.f-bold {
+    font-weight: bold;
+}
+
 .fundo-pedido{
-    background-image: url('https://images.pexels.com/photos/1556698/pexels-photo-1556698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('../storage/banner/teste.png');
     background-attachment: fixed;
-    background-position: center;
+    background-position: end;
     background-repeat: no-repeat;
     background-size: cover;
 }
 label {
     font-weight: 500;
+    font-size: 15pt;
 }
 .form-pedido{
     padding-top: 50px;
@@ -33,4 +40,7 @@ label {
 
 .form-pedido i{
     color: #ffc21c;
+   
 }
+
+

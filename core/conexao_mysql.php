@@ -3,8 +3,8 @@
  function conecta() : mysqli
  {
     $servidor = 'localhost';
-    $banco = 'banco';
-    $port = 3307;
+    $banco = 'usuario';
+    $port = 3306;
     $usuario = 'root';
     $senha = '';
     $conexao = mysqli_connect($servidor, $usuario, $senha, $banco, $port);
