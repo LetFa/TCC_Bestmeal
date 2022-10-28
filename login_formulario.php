@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php require __DIR__ . "/views/home/componentes/head.php" ?>
+<?php require __DIR__ . "./views/home/componentes/head.php" ?>
 
 <body>
-    <?php require __DIR__ . "/views/home/componentes/navbar.php" ?>
+    <?php require __DIR__ . "./views/home/componentes/navbar.php" ?>
 
     <div class="area-login">
         <section class="text-center text-lg-start">
             <div class="card mb-3 formulario-login">
                 <div class="row g-0 d-flex align-items-center">
                     <div class="col-lg-4 d-none d-lg-flex">
-                        <img src="views/_resources/storage/banner/mini-login.png" alt="Trendy Pants and Shoes" class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5">
+                        <img src="./views/_resources/storage/banner/mini-login.png" alt="Trendy Pants and Shoes" class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5">
                     </div>
 
                     <div class="col-lg-8">
                         <div class=" py-3 px-md-5">
                             <div class="form-area">
-                                <form method="post" action="core/usuario_repositorio.php">
+                                <form method="post" action="./core/usuario_repositorio.php">
                                     <input type="hidden" name="acao" value="login">
                                     <div class="form-outline mb-4">
                                         <input type="email" id="email" name="email"  class="form-control" placeholder="examples@gmail.com" require="required">

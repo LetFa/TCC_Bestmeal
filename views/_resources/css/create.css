@@ -29,10 +29,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-label {
-    font-weight: 500;
-    font-size: 15pt;
-}
+
 .form-pedido{
     padding-top: 50px;
     padding-bottom: 50px;

@@ -3,7 +3,7 @@
  function conecta() : mysqli
  {
     $servidor = 'localhost';
-    $banco = 'usuario';
+    $banco = 'tcc_bestmeal';
     $port = 3306;
     $usuario = 'root';
     $senha = '';
