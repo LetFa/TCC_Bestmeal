@@ -1,5 +1,4 @@
 <?php 
-    require __DIR__ ."/vendor/autoload.php";
     require __DIR__ ."/sistema/bloqueio.php";
 ?>
 
@@ -16,7 +15,7 @@
 
             <h1 class="text-center text-dark mt-5" style="font-family: 'Oswald', sans-serif;"><i class="bi bi-caret-right-fill"></i>Cria seu pedido<i class="bi bi-caret-left-fill"></i></h1>
     
-            <form action="" class="form-pedido">
+            <form action="" method="GET" class="form-pedido">
                 
               <div class="fundo-cinza">
                 <div class="form-group">
@@ -85,7 +84,7 @@
 
                     <div class="form-group mt-5">
 
-                        <label for="queijo" class="text-white">Escolha seu queijo: <i class="fa-solid fa-cheese"></i></label>
+                        <label for="queijo" class="text-dark">Escolha seu queijo: <i class="fa-solid fa-cheese"></i></label>
                     
                         <div class="form-check mt-3">
                             <input class="form-check-input" type="checkbox" value="queijo1" id="queijo">
@@ -141,7 +140,7 @@
      
                     <div class="form-group mt-5">
 
-                        <label for="salada" class="text-white">Escolha sua salada: <i class="fa-solid fa-seedling"></i></label>
+                        <label for="salada" class="text-dark">Escolha sua salada: <i class="fa-solid fa-seedling"></i></label>
 
                         <div class="form-check mt-3">
                             <input class="form-check-input" type="checkbox" value="salada1" id="salada">
@@ -199,7 +198,7 @@
                 <div class="form-row">
                     <div class="form-group mt-5">
 
-                        <label for="carne" class="text-white">Escolha sua carne:
+                        <label for="carne" class="text-dark">Escolha sua carne:
                         <i class="fa-solid fa-drumstick-bite"></i>
                         </label>
 
@@ -372,7 +371,7 @@
                 </div>   
                 </div>
                 <div class="text-center mt-5">
-                    <button class="btn btn-dark">Fazer pedido</button>
+                    <button class="btn btn-dark" type="submit">Fazer pedido</button>
                 </div>
             </form>
         </div>

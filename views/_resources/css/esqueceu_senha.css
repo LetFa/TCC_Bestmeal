@@ -4,7 +4,7 @@
     padding: 150px;
     width: 100%;
     height: 100%;
-    background-image: url('../storage/banner/tela_senha.png');
+    background-image: url('/views/_resources/storage/banner/tela_senha.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

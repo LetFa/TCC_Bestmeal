@@ -1,5 +1,4 @@
 <?php 
-    require __DIR__ ."/vendor/autoload.php";
     require __DIR__ ."/sistema/bloqueio.php";
 ?>
 
@@ -12,7 +11,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-4 d-flex flex-column align-items-center">
-            <img src="https://raw.githubusercontent.com/Rodrigotutz/Projeto-Bestmeal/master/resources/assets/storage/perfil/perfil.jpeg" class="w-75 perfil-img" alt="Foto de Perfil">
+            <img src="#" class="w-75 perfil-img" alt="Foto de Perfil">
             <form class="mt-3">
                 <label for="perfil" class="form-label">Selecione sua foto:</label>
                 <input id="perfil" name="perfil" type="file" class="form-control">

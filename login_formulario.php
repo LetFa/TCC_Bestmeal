@@ -1,4 +1,3 @@
-<?php require __DIR__ . "/vendor/autoload.php" ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,7 +11,7 @@
             <div class="card mb-3 formulario-login">
                 <div class="row g-0 d-flex align-items-center">
                     <div class="col-lg-4 d-none d-lg-flex">
-                        <img src="<?= asset('storage/banner/mini-login.png') ?>" alt="Trendy Pants and Shoes" class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5">
+                        <img src="views/_resources/storage/banner/mini-login.png" alt="Trendy Pants and Shoes" class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5">
                     </div>
 
                     <div class="col-lg-8">

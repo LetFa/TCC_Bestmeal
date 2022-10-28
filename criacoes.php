@@ -1,5 +1,4 @@
 <?php 
-    require __DIR__ ."/vendor/autoload.php";
     require __DIR__ ."/sistema/bloqueio.php";
 ?>
 
@@ -10,7 +9,7 @@
 
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
    
-    <h1>Criações</h1>
+    <h1 class="text-center mt-5">Criações</h1>
 
     <?php require __DIR__ ."/views/home/componentes/footer.php" ?>
 </body>

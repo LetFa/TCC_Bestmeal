@@ -1,5 +1,3 @@
-<?php require __DIR__ . "/vendor/autoload.php" ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,7 +10,7 @@
         <div class="container">
             <section class="text-center text-lg-start">
                 <div class="card mb-3 formulario-cadastrar">
-                    <img src="<?= asset('storage/banner/mini-login.png')?>" alt="logo">
+                    <img src="views/_resources/storage/banner/mini-login.png" alt="logo">
                     <?php
                     require_once 'includes/funcoes.php';
                     require_once 'core/conexao_mysql.php';

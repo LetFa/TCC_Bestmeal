@@ -126,10 +126,10 @@
 
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Bestmeal</a>
+        <a class="text-reset fw-bold" href="#/">Bestmeal</a>
       </div>
     </footer>
     
-    <script src="<?=asset('js/jquery.min.js')?>" ></script>
-    <script src="<?=asset('js/popper.min.js')?>"></script>
-    <script src="<?=asset('js/script.js')?>" ></script>
+
+    <script src="./views/_resources/js/jquery.min.js"></script>
+    <script src="./views/_resources/js/popper.min.js"></script>
