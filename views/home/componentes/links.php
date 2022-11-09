@@ -9,9 +9,6 @@
             <li class="nav-item">
                 <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/criacoes.php" id="created">Minhas criações</a>
             </li>
-            <li class="nav-item">
-                <a class=" nav-link small text-dark menu" href="/TCC_Bestmeal/conta.php" id="account">Conta</a>
-            </li>
         <?php }?>
 
 
@@ -29,17 +26,17 @@
         <?php } ?>
 
         <?php if((isset($_SESSION['login']))
-                && ($_SESSION['login']['usuario']['adm'] ===1)) : ?>
+                && ($_SESSION['login']['usuarios']['adm'] ===1)) : ?>
             <li class="nav-item">
                 <a class="nav-link" href="usuarios.php">Usuários</a>
             </li>
         <?php endif; ?>
         
-        <?php if(isset($_SESSION["nome"])) { ?>
+        <?php if(isset($_SESSION["login"])) { ?>
             <div>
-           <span>Olá <?= $_SESSION['nome']?>!</span>
+           <span>Olá <?= $_SESSION['login']['usuarios']['nome']?>!</span>
             <a href="core/usuario_repositorio.php?acao=logout"
-                class="btn btn-link btn-sm" role="button">Sair</a>
+                class="btn btn-dark btn-sm" role="button">Sair</a>
             </div>
        <?php } ?>
     </ul>
