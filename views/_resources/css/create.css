@@ -1,43 +1,9 @@
-.salada{
-    width: 30%;
-    height: 30%;
-}
-
-.form-row{
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid transparent;
-    margin-top: 2rem;
-}
-.fundo-cinza{
-    background-color: rgba(187, 187, 187, 0.479);
-    padding: 10px 10px;
-}
-.form-check-input:checked {
-    background-color: #ffc21c;
-    border-color: #ffc21c;
-}
-
-.f-bold {
-    font-weight: bold;
-}
-
-.fundo-pedido{
-    background-image: url('../storage/banner/teste.png');
-    background-attachment: fixed;
-    background-position: end;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.form-pedido{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.form-pedido i{
+#lanches i {
     color: #ffc21c;
-   
 }
 
+#lanches h1{
+    font-size: 20pt;
+    margin-bottom: 4rem;
+}
 

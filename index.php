@@ -44,11 +44,21 @@ require __DIR__ . "/sistema/bloqueio.php";
                 <img class="card-img-top " src="views/_resources/storage/lanches/lanche001.png" alt="x-american">
                 <div class="card-body">
                   <p class="card-text text-dark text-center">X-AMERICAN</p>
-                  <p class="card-text text-dark ">Valor R$ 15,99</p>
+                
+                  <div class="lista-cardapio">
+                    <ul>
+                      <li><i class="bi bi-caret-right-fill"></i>2 Hambúrguer;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Alface;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Azeitona preta;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Cebola Roxa;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Pliques;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Bacon;</li>
+                    </ul>
+                  </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-outline-warning  btn-area">Comprar</button>
-                      <button type="button" class="btn btn-outline-warning btn-area">Recriar</button>
+                    <button type="button" class="btn btn-warning">Comprar</button>
+                    <p class="card-text text-success font" style="margin-left:1rem;">R$ 15,99</p>
                     </div>
                     <small class="text-muted">Bestmeal</small>
                   </div>
@@ -60,11 +70,20 @@ require __DIR__ . "/sistema/bloqueio.php";
                 <img class="card-img-top " src="views/_resources/storage/lanches/lanche002.png" alt="x-american">
                 <div class="card-body">
                   <p class="card-text text-center">X-TORRE EIFFEL</p>
-                  <p class="card-text">valor R$ 13,99</p>
+                  <div class="lista-cardapio">
+                    <ul>
+                      <li><i class="bi bi-caret-right-fill"></i>3 Hambúrguer;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Alface;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Cheddar;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Cebola;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Pliques;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Tomate;</li>
+                    </ul>
+                  </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-outline-warning btn-area">Comprar</button>
-                      <button type="button" class="btn btn-outline-warning btn-area">Recriar</button>
+                      <button type="button" class="btn btn-warning">Comprar</button>
+                      <p class="card-text text-success font" style="margin-left:1rem;">R$ 13,99</p>
                     </div>
                     <small class="text-muted">Bestmeal</small>
                   </div>
@@ -76,11 +95,20 @@ require __DIR__ . "/sistema/bloqueio.php";
                 <img class="card-img-top " src="views/_resources/storage/lanches/lanche003.png" alt="x-american">
                 <div class="card-body">
                   <p class="card-text text-center">X-BACON</p>
-                  <p class="card-text">valor R$ 12,99</p>
+                  <div class="lista-cardapio">
+                    <ul>
+                      <li><i class="bi bi-caret-right-fill"></i>1 Hambúrguer;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Alface;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Queijo;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Cebola;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Bacon;</li>
+                      <li><i class="bi bi-caret-right-fill"></i>Tomate;</li>
+                    </ul>
+                  </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-outline-warning btn-area">Comprar</button>
-                      <button type="button" class="btn btn-outline-warning btn-area">Recriar</button>
+                      <button type="button" class="btn btn-warning">Comprar</button>
+                      <p class="card-text text-success font" style="margin-left:1rem;">R$ 17,99</p>
                     </div>
                     <small class="text-muted">Bestmeal</small>
                   </div>

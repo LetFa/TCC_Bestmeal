@@ -32,10 +32,16 @@
 }
 
 /*lanche-area*/
-.btn-area {
-    margin: 5px;
-}
 
+.lista-cardapio li{
+   list-style: none;
+}
+.lista-cardapio i{
+    color: #ffc21c;
+ }
+.font{
+    font-size: 18pt;
+}
 .titulo-area {
     margin-top: 100px;
     margin-bottom: 40px;
