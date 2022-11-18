@@ -1,5 +1,7 @@
 <?php 
 
+require __DIR__ . "/Connection.php";
+
 function insert(string $entidade, array $dados) : string 
 {
      $instrucao = "INSERT INTO {$entidade}";

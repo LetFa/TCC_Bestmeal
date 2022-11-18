@@ -7,7 +7,7 @@
                 <a class=" nav-link small text-dark menu " href="/TCC_Bestmeal/criar.php" id="create">Criar pedido</a>
             </li>
             <li class="nav-item">
-                <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/criacoes.php" id="created">Minhas criações</a>
+                <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido">Meu pedido</a>
             </li>
         <?php }?>
 
