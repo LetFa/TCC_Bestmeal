@@ -11,16 +11,7 @@
    
     <h1 class="text-center mt-5">Pedido finalizado</h1>
 
-        <?php
-
-        echo "ID PRODUTO: ";
-        print_r($_GET['produtoId']);
-        echo "<br>";
-
-        echo "ID Usuario: ";
-        print_r($_SESSION['login']['usuarios']['id']);
-
-        ?>
+       
 
     <?php require __DIR__ ."/views/home/componentes/footer.php" ?>
 </body>
