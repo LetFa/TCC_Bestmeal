@@ -3,12 +3,14 @@
             <li class="nav-item">
                 <a class=" nav-link small text-dark menu" aria-current="page" href="/TCC_Bestmeal/" id="home">Início</a>
             </li>
-            <li class="nav-item">
-                <a class=" nav-link small text-dark menu " href="/TCC_Bestmeal/criar.php" id="create">Criar pedido</a>
-            </li>
-            <li class="nav-item">
-                <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido">Meu pedido</a>
-            </li>
+            <?php if( !((isset($_SESSION['login'])) && ($_SESSION['login']['usuarios']['adm'] ===1))) : ?>
+                <li class="nav-item">
+                    <a class=" nav-link small text-dark menu " href="/TCC_Bestmeal/criar.php" id="create">Criar pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido">Meu pedido</a>
+                </li>
+            <?php endif; ?>
         <?php }?>
 
 
@@ -25,11 +27,19 @@
 
         <?php } ?>
 
-        <?php if((isset($_SESSION['login']))
-                && ($_SESSION['login']['usuarios']['adm'] ===1)) : ?>
+        <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['usuarios']['adm'] ===1)) : ?>
             <li class="nav-item">
-                <a class="nav-link" href="usuarios.php">Usuários</a>
+                <a class="av-link small text-dark menu" href="cadastro.php">Cadastrar Produto</a>
             </li>
+            <li class="nav-item">
+                <a class="av-link small text-dark menu" href="produto_formulario.php">Produtos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="av-link small text-dark menu" href="usuarios.php">Usuários</a>
+            </li>
+
+                
         <?php endif; ?>
         
         <?php if(isset($_SESSION["login"])) { ?>

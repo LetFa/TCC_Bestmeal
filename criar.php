@@ -1,8 +1,5 @@
 <?php
-
 require __DIR__ . "/sistema/bloqueio.php";
-
-
 
 ?>
 
@@ -18,10 +15,17 @@ require __DIR__ . "/sistema/bloqueio.php";
      <div class="container" id="lanches">
         <div class="row">
             <div class="col-md-12">
+                   <?php
+                       
+                        include 'sistema/valida_login.php';
+                    ?>
                 <h1 class="text-center mt-5"><i class="bi bi-caret-right-fill"></i> Faça seu pedido <i class="bi bi-caret-left-fill"></i></h1>
             </div>
 
-            <!-- Cria um loop de dados -->
+            <div class="col-md-12">
+                    <?php include 'includes/menu.php'; ?>
+            </div>
+            
          
             <div class="col-md-3">
               <div class="card mb-4 box-shadow">
@@ -282,7 +286,7 @@ require __DIR__ . "/sistema/bloqueio.php";
                   <div class="card-body">
                   <h5 class="text-center">CHEDDAR</h5>
                   <div class="lista-cardapio text-center">
-                    <p>Hambúrguer, molho cheddar e bacon
+                    <p>Hambúrguer, molho cheddar, ketchup e bacon
                     </p>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">

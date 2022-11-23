@@ -9,6 +9,9 @@
 
 }
 
+.menu{
+    text-decoration: none;
+}
 .active {
     color: #ffc21c !important;
 }
