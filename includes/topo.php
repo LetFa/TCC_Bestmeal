@@ -7,7 +7,7 @@
     <div class="card-body text-right text-dark">
         Olá <?php echo $_SESSION['login']['usuarios']['nome']?>!
         <a href="core/usuario_repositorio.php?acao=logout"
-            class="btn btn-link btn-sm" role="button">Sair</a>
+            class="btn btn-dark" role="button">Sair</a>
     </div>
     <?php endif ?>
 </div>
