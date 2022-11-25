@@ -21,9 +21,8 @@ if(isset($_FILES['foto']))
    echo 'lanche';
    $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
    $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-   $target_dir = '../storage/lanches/'; //Diretório para uploads 
-   move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
-   
+   $dir = '../../imagens/'; //Diretório para uploads 
+   move_uploaded_file($_FILES['foto']['tmp_name'], $dir.$foto_name); //Fazer upload do arquivo
    
 } 
 
@@ -34,15 +33,13 @@ $id = (int)$id;
 switch($acao){ 
     case 'insert':
         $dados = [
-            'nome' => $nome,
-            'preco' => $preco,
-            'ingredientes' => $ingredientes,
-            'foto' => $foto,
-            
+            'cod_pedido'    => $cod_pedido,
+            'cod_usuario'    => $_SESSION['login']['usuario']['cod_usuario'],
+            'cod_produto'    => $cod_produto,
         ];
 
         insere(
-            'produtos',
+            'pedido_itens',
             $dados
         );
         
@@ -51,23 +48,23 @@ switch($acao){
 
         case 'update':
             $dados = [
-                'nome' => $nome,
-                'preco' => $preco,
-                'ingredientes' => $ingredientes,
-                'foto' => $foto,
+                'cod_pedido'    => $cod_pedido,
+                'cod_usuario'    => $_SESSION['login']['usuario']['cod_usuario'],
+                'cod_produto'    => $cod_produto,
             ];
     
              $criterio = [
-                ['id', '=', $id]
+                ['cod', '=', $id]
              ];
 
              atualiza(
-                'produtos',
+                'pedido_itens',
                 $dados,
                 $criterio
              );
 
              break;
+
 }
 
 header('location: ../index.php');
