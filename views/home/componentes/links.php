@@ -32,7 +32,7 @@
                 <a class="av-link small text-dark menu" href="cadastro.php">Cadastrar Produto</a>
             </li>
             <li class="nav-item">
-                <a class="av-link small text-dark menu" href="produto_formulario.php">Produtos</a>
+                <a class="av-link small text-dark menu" href="produtos.php">Produtos</a>
             </li>
 
             <li class="nav-item">

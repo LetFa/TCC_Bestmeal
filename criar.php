@@ -35,6 +35,7 @@ require __DIR__ . "/sistema/bloqueio.php";
                   <div class="lista-cardapio text-center">
                     <p>Hambúrguer, queijo, tomate, alface e pliques</p>
                   </div>
+                  
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                      <form action="pedido.php" method="GET">

@@ -70,6 +70,6 @@ switch($acao){
              break;
 }
 
-header('location: ../produto_formulario.php');
+header('location: ../produtos.php');
 ?>
 
