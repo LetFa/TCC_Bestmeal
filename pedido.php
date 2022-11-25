@@ -9,9 +9,10 @@
 
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
    
-    <h1 class="text-center mt-5">Pedido finalizado</h1>
+    <h1 class="text-center mt-5">Página de finalizar o pedido</h1>
 
-       
+        
+
 
     <?php require __DIR__ ."/views/home/componentes/footer.php" ?>
 </body>
