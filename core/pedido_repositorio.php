@@ -27,6 +27,9 @@ if(isset($_FILES['foto']))
 } 
 
 
+$ingredientes = $_POST['ingredientes'];
+echo '<p>teste: '.$ingredientes;
+
 
 $id = (int)$id;
 

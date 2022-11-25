@@ -65,10 +65,10 @@
                             value="<?php echo $entidade['preco'] ?? '' ?>">
                     </div>
                     <div class="form-group">
-                        <label for="ingred">Ingredientes:</label>
+                        <label for="ingredientes">Ingredientes:</label>
                         <input class="form-control" type="text"
-                            require="required" id="ingred" name="ingred"
-                            value="<?php echo $entidade['ingred'] ?? '' ?>">
+                            require="required" id="ingredientes" name="ingredientes"
+                            value="<?php echo $entidade['ingredientes'] ?? '' ?>">
                         </div>
 
                     </div>
@@ -86,7 +86,7 @@
         <div class="row">
             <div class="col-md-12">
                 <?php
-                    include 'views/home/componentes/footer.php';
+            
                 ?>
             </div>
         </div>

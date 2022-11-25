@@ -21,13 +21,13 @@ if(isset($_FILES['foto']))
    echo 'lanche';
    $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
    $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-   $target_dir = '../storage/lanches/'; //Diretório para uploads 
+   $target_dir = '../views/_resources/storage/lanches/'; //Diretório para uploads 
    move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
    
    
 } 
 
-
+$foto = $target_dir.$foto_name;
 
 $id = (int)$id;
 
@@ -70,6 +70,6 @@ switch($acao){
              break;
 }
 
-header('location: ../index.php');
+header('location: ../produto_formulario.php');
 ?>
 
