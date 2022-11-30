@@ -34,14 +34,14 @@
                     ['*'],
                     [['id', '=', $pedido]]
                 );
-                echo $pedido;
-                //echo $produtos[0]['nome'];
-                //echo $produtos[0]['preco'];
-                //echo $produtos[0]['ingredientes'];
-                //$total += (float)$produtos[0]['preco'];
+                //echo $pedido;
+               // echo $produtos[0]['nome'];
+               // echo $produtos[0]['preco'];
+               // echo $produtos[0]['ingredientes'];
+                $total += (float)$produtos[0]['preco'];
                 echo  "<br>";
             }
-            echo $total;
+            //echo $total;
         }
 
     ?>
@@ -49,7 +49,7 @@
     
    
   <?php
-    $total  = 0;
+   
     if(isset($_SESSION['pedido']))
         
             foreach($_SESSION['pedido'] as $pedido):     
