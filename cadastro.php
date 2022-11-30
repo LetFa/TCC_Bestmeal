@@ -11,15 +11,20 @@
  
 <?php require __DIR__ . "/views/home/componentes/navbar.php" ?>
 
-<div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                   
-                </div>
-            </div>
-            <div class="row" style="min-height: 500px;">
+<div class="banner-cadastro">
 
-                <div class="col-md-10" style="padding-top: 50px;">
+<div class="container">
+         <div class="row">
+            <div class="col-md-12">  
+          
+    
+            <div class="form-cadastro">
+
+           
+                <div id="lanches">   
+                        <h1 class="text-center mt-5 text-light"><i class="bi bi-caret-right-fill"></i> Cadastro dos lanches <i class="bi bi-caret-left-fill"></i></h1>
+                </div>
+
                 <?php
                     require_once 'includes/funcoes.php';
                     require_once 'core/conexao_mysql.php';
@@ -46,7 +51,9 @@
                         $entidade = $retorno[0];
                     }
                 ?>
-                <h2>Cadastro lanches</h2>
+            
+            
+        
                 <form method="post" action="core/produtos_repositorio.php" enctype="multipart/form-data">
                     <input type="hidden" name="acao"
                             value="<?php echo empty($id) ? 'insert' : 'update' ?>">
@@ -76,13 +83,14 @@
                         <label for="conteudo">Enviar foto do lanche:</label>
                         <input type="file" name="foto" accept="image/*">    
                     </div>   
-                    <div class="text-right">
-                        <button class="btn btn-success"
-                                 type="submit">Próximo</button>
+                    <div>
+                        <button class="btn btn-success" type="submit">Próximo</button>
                     </div>
                 </form>
             </div>
         </div>
+</div>
+        
     
         <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
 

@@ -11,3 +11,16 @@
 .sub{
     margin-top: -100px;
 }
+
+.banner-cadastro{
+    background-image: url('../storage/banner/banner-cadastro.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.form-cadastro{
+   background-color: rgba(3, 3, 2, 0.162);
+   padding: 10px;
+   margin-top: 4rem;
+}

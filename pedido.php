@@ -65,7 +65,7 @@
 
     <div class="py-4">
         <div class="container">
-            <div class="row" >
+            <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-block">
@@ -77,34 +77,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">
-                                <?php echo $produtos[0]['nome']; ?>
-                            </h4>
-                            <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
-                            <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">
-                                <?php echo $produtos[0]['nome']; ?>
-                            </h4>
-                            <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
-                            <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>
-
+    </div>
 </div>
             
     
