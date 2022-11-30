@@ -20,10 +20,12 @@
 <body>
 
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
-   
-    <h1 class="text-center mt-5">Página de finalizar o pedido</h1>
 
-    <div>
+    <div id="lanches">   
+    <h1 class="text-center mt-5"><i class="bi bi-caret-right-fill"></i> Finalização do pedido <i class="bi bi-caret-left-fill"></i></h1>
+    </div>
+
+    <div class="sub">
     <?php
         if(isset($_SESSION['pedido']))
         {        
@@ -45,7 +47,7 @@
         }
 
     ?>
-    </div>
+    
     
    
   <?php
@@ -59,24 +61,57 @@
                     [['id', '=', $pedido]]
                 );                         
             
-?>
-    <div class="py-5">
-    <div class="container">
-      <div class="row hidden-md-up">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-block">
-              <h4 class="card-title">
-                   <?php echo $produtos[0]['nome']; ?>
-              </h4>
-              <h6 class="card-subtitle text-muted"><?php echo $produtos[0]['preco'];?></h6>
-              <p class="card-text p-y-1"><?php echo $produtos[0]['ingredientes'];?></p>
-              
+   ?>
+
+    <div class="py-4">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                <?php echo $produtos[0]['nome']; ?>
+                            </h4>
+                            <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
+                            <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                <?php echo $produtos[0]['nome']; ?>
+                            </h4>
+                            <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
+                            <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                <?php echo $produtos[0]['nome']; ?>
+                            </h4>
+                            <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
+                            <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-          </div>
         </div>
-      </div>
     </div>
+
+</div>
+            
+    
+
+
+
+
     <?php
     endforeach;
     ?>
@@ -84,7 +119,7 @@
       <div class="container mt-5">
         <div class="col-md-12">
              <h2 class="text-center">Valor total da compra</h2>
-             <div class="text-center">
+             <div class="text-center"> R$
              <?php echo $total; ?>
              </div>
       </div>
