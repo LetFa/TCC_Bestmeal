@@ -8,7 +8,7 @@
                     <a class=" nav-link small text-dark menu " href="/TCC_Bestmeal/produtos.php" id="create">Lanches prontos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido">Meu pedido</a>
+                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido" style='font-size:15pt;'><i class="bi bi-cart-plus"></i></a>
                 </li>
             <?php endif; ?>
         <?php }?>

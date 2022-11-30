@@ -54,8 +54,8 @@ require __DIR__ . "/sistema/bloqueio.php";
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <form action="pedido.php" method="GET">
-                    <input name="produtoId" type="hidden">
-                    <button type="submit" class="btn btn-sm btn-warning text-decoration"><a href="<?php echo 'teste.php?id=' . $produtos['produtoId'] ?>" style="text-decoration:none;color:black;">Comprar</a></button>
+                    <input name="produtoId" id="produtoId" type="hidden">
+                    <button type="submit"  class="btn btn-sm btn-warning text-decoration"><a href="#" style="text-decoration:none;color:black;">Comprar</a></button>
                   </form>
                   <p class="card-text text-success" style="margin-left: 1rem;font-size:15pt;"><?php echo $produtos['preco'] ?></p>
                 </div>

@@ -36,28 +36,28 @@ require __DIR__ . "/sistema/bloqueio.php";
       ?>
 
       <?php
-      foreach ($produtos as $produtos) :
+      foreach ($produtos as $produto) :
       ?>
 
 
 
         <div class="col-md-3">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src=<?php echo "imagens/" . $produtos['foto'] ?> alt="Card image cap">
+            <img class="card-img-top" src=<?php echo "imagens/" . $produto['foto'] ?> alt="Card image cap">
 
             <div class="card-body">
-              <h5 class="text-center"><?php echo $produtos['nome'] ?></h5>
+              <h5 class="text-center"><?php echo $produto['nome'] ?></h5>
               <div class="lista-cardapio text-center">
-                <p><?php echo $produtos['ingredientes'] ?></p>
+                <p><?php echo $produto['ingredientes'] ?></p>
               </div>
 
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <form action="pedido.php" method="GET">
                     <input name="produtoId" type="hidden">
-                    <button type="submit" class="btn btn-warning text-decoration"><a href="<?php echo 'pedido.php?id=' . $produtos['produtoId'] ?>" style="text-decoration:none;color:black;">Comprar</a></button>
+                    <button type="submit" class="btn btn-warning text-decoration"><a href="<?php echo 'pedido.php?id=' . $produto['id'] ?>" style="text-decoration:none;color:black;">Comprar</a></button>
                   </form>
-                  <p class="card-text text-success" style="margin-left: 1rem;font-size:15pt;"><?php echo $produtos['preco'] ?></p>
+                  <p class="card-text text-success" style="margin-left: 1rem;font-size:15pt;"><?php echo $produto['preco'] ?></p>
                 </div>
                 <small class="text-muted">Bestmeal</small>
               </div>

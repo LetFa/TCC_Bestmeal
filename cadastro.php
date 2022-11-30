@@ -51,7 +51,7 @@
                     <input type="hidden" name="acao"
                             value="<?php echo empty($id) ? 'insert' : 'update' ?>">
                     <input type="hidden" name="id"
-                            value="<?php echo $entidade['cod_livro'] ?? '' ?>">
+                            value="<?php echo $entidade['cod'] ?? '' ?>">
                     <div class="form-group">
                         <label for="nome">Nome:</label>
                         <input class="form-control" type="text"
