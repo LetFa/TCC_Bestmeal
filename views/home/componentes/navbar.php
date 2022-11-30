@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-light open-sans sticky-top text-center nav-shadow align-items-center" style="padding:2px 2px;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light open-sans sticky-top  nav-shadow align-items-center" style="padding:2px 2px;">
   <div class="container" id="filter-btn-box">
     <a href="/" class="navbar-brand fs-5 fw-bold">
     <img class="logo-bestmeal" src="views/_resources/storage/logo/bestmeal-logo.png">
@@ -10,5 +10,8 @@
       <?php require __DIR__. "/links.php" ?>
     </div>
 </nav>
+
+
+
 
 

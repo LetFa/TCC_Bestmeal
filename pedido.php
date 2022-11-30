@@ -20,10 +20,14 @@
 <body>
 
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
-
+    
+    <div class="btn-car mt-3">
+      <a href="produtos.php"><i class="bi bi-cart-plus"> Adicionar mais no carrinho </i></a>
+    </div> 
     <div id="lanches">   
     <h1 class="text-center mt-5"><i class="bi bi-caret-right-fill"></i> Finalização do pedido <i class="bi bi-caret-left-fill"></i></h1>
     </div>
+
 
     <div class="sub">
     <?php
@@ -63,30 +67,24 @@
             
    ?>
 
-    <div class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">
-                                <?php echo $produtos[0]['nome']; ?>
-                            </h4>
-                            <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
-                            <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
+        <div class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <?php echo $produtos[0]['nome']; ?>
+                                </h4>
+                                <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
+                                <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
-    </div>
 </div>
-            
-    
-
-
-
 
     <?php
     endforeach;
@@ -98,9 +96,12 @@
              <div class="text-center"> R$
              <?php echo $total; ?>
              </div>
-      </div>
+        </div>
+        <div class="text-center mt-5">
+            <button class="btn btn-success">Finalizar pedido</button>
+        </div>
     </div>
-
+ 
 </div>
 
     <?php require __DIR__ ."/views/home/componentes/footer.php" ?>

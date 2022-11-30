@@ -1,4 +1,5 @@
 <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 align-items-center">
+
        <?php if(isset($_SESSION['nome'])) { ?>
             <li class="nav-item">
                 <a class=" nav-link small text-dark menu" aria-current="page" href="/TCC_Bestmeal/" id="home">Início</a>
@@ -8,7 +9,7 @@
                     <a class=" nav-link small text-dark menu " href="/TCC_Bestmeal/produtos.php" id="create">Lanches prontos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido" style='font-size:15pt;'><i class="bi bi-cart-plus"></i></a>
+                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido" style='font-size:15pt;'><i class="bi bi-cart3"></i></a>
                 </li>
             <?php endif; ?>
         <?php }?>
@@ -50,5 +51,4 @@
             </div>
        <?php } ?>
     </ul>
-
     
