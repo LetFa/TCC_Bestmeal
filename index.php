@@ -10,35 +10,21 @@ require __DIR__ . "/sistema/bloqueio.php";
   <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
 
 
-  <!--Carousel
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="views/_resources/storage/banner/banner1.png" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="views/_resources/storage/banner/banner2.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="views/_resources/storage/banner/banner3.png" alt="Third slide">
+  <div class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-home">
+          <h1>Sejam Bem - Vindo(a)!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, rem. Laboriosam sunt quas officia, laborum corporis earum iste rem, ipsum saepe distinctio quis sed necessitatibus libero neque molestiae numquam ut!</p>
+          <button class="btn btn-dark"><i class="bi bi-arrow-right"></i> Saiba mais</button>
+        </div>
+        <div class="col-md-6 img-chefe">
+          <img src="./views/_resources/storage/time/chefe.png" alt="">
+        </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
--->
+
   <!--lanches-->
   <div class="lanche-area">
     <div class="container">
@@ -97,17 +83,17 @@ require __DIR__ . "/sistema/bloqueio.php";
       </div>
     </div>
   </div>
-  </div>
+ 
 
   <!--Equipe-->
   <div class="team-area">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-        <h1 class="text-center titulo-area"><i class="bi bi-caret-right-fill"></i>Conheça nossa equipe<i class="bi bi-caret-left-fill"></i></h1>
+          <h1 class="text-center titulo-area"><i class="bi bi-caret-right-fill"></i>Conheça nossa equipe<i class="bi bi-caret-left-fill"></i></h1>
         </div>
 
-        <div class="col-md-3" >
+        <div class="col-md-3">
           <div class="card time mt-5" id="card-le">
             <img src="views/_resources/storage/time/equipe1.jpeg" class="card-img-top" alt="imagem de perfil 1">
             <div class="card-body">

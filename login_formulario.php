@@ -37,7 +37,7 @@
                                         </div>
 
                                         <div class="col">
-                                            <a href="#">Esqueceu a senha?</a>
+                                            <a href="#" style="text-decoration: none;">Esqueceu a senha?</a>
                                         </div>
                                     </div>
 

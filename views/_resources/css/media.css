@@ -23,6 +23,7 @@
     .news-input {
         width: 60%;
     }
+
 }
 @media(max-width: 716px) {
     .news-input {
@@ -71,3 +72,19 @@
     }
    
 }
+
+@media (max-width:760px){
+    .img-chefe img {
+        display: none;
+    }
+}
+@media (max-width:425px){
+    .text-home{
+        margin-top: 3rem;
+    }
+} 
+@media (max-width:370px){
+    .text-home h1{
+        font-size: 17pt;
+    }
+} 

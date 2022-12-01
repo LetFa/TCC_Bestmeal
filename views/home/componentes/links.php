@@ -9,7 +9,7 @@
                     <a class=" nav-link small text-dark menu " href="/TCC_Bestmeal/produtos.php" id="create">Lanches prontos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido" style='font-size:15pt;'><i class="bi bi-cart3"></i></a>
+                    <a class="  nav-link small text-dark menu" href="/TCC_Bestmeal/pedido.php" id="pedido"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
                 </li>
             <?php endif; ?>
         <?php }?>
@@ -18,12 +18,12 @@
         <?php if(!isset($_SESSION['nome'])) { ?>
             
         <li class="nav-item">
-            <a class=" nav-link small text-dark menu" href="/TCC_Bestmeal/usuario_formulario.php" id="cadastrar">Cadastrar</a>
+            <a class=" nav-link small text-dark menu" href="/TCC_Bestmeal/usuario_formulario.php" id="cadastrar"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cadastrar</a>
         </li>
 
 
         <li class="nav-item">
-            <a class=" nav-link small text-dark menu" href="/TCC_Bestmeal/login_formulario.php" id="entrar">Entrar</a>
+            <a class=" nav-link small text-dark menu" href="/TCC_Bestmeal/login_formulario.php" id="entrar"><i class="fa-solid fa-user"></i> Entrar</a>
         </li>
 
         <?php } ?>

@@ -26,9 +26,9 @@
      </section>
    </div>
 
-   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+   <div class="text-center text-dark p-3">
      © 2020 Copyright:
-     <a class="text-white" href="https://github.com/LetFa">Letícia Farias</a>
+     <a class="text-dark" href="https://github.com/LetFa" style="text-decoration:none;">Letícia Farias</a>
    </div>
  </footer>
 

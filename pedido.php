@@ -22,7 +22,9 @@
     <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
     
     <div class="btn-car mt-3">
-      <a href="produtos.php"><i class="bi bi-cart-plus"> Adicionar mais no carrinho </i></a>
+        <button class="btn btn-warning">
+          <a href="produtos.php"><i class="fa-sharp fa-solid fa-cart-plus"></i></a>
+       </button>
     </div> 
     <div id="lanches">   
     <h1 class="text-center mt-5"><i class="bi bi-caret-right-fill"></i> Finalização do pedido <i class="bi bi-caret-left-fill"></i></h1>

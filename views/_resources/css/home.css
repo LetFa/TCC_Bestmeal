@@ -2,11 +2,17 @@ body{
     font-family: 'arial', sans-serif;
 }
 
-
-
-/*carousel*/
-.carousel-item img {
-    width: 100%;
+.home{
+    text-align: center;
+    background-color: #ffecb8;
+    padding: 80px 30px;
+    height: 500px;
+}
+.text-home{
+    margin-top: 8rem;
+}
+.img-chefe img {
+    margin-top: -80px;
 }
 
 /*logo*/
@@ -62,7 +68,6 @@ body{
 }
 
 .lanche-area {
-    background-color: rgb(222, 255, 216);
     margin-top: -50px !important;
 }
 
@@ -85,23 +90,26 @@ body{
 /*team-area*/
 
 #card-le{
-    border: 3px solid pink;
-    background-color: pink;
+    border: 3px solid rgb(255, 216, 222);
+    background-color: rgb(255, 216, 222);
 }
 #card-la{
-    border: 3px solid rgb(255, 175, 175);
-    background-color: rgb(255, 175, 175);
+    border: 3px solid rgb(255, 194, 194);
+    background-color: rgb(255, 194, 194);
 }
 
 #card-jo{
-    border: 3px solid rgb(147, 158, 255);
-    background-color: rgb(147, 158, 255);
+    border: 3px solid rgb(209, 213, 255);
+    background-color: rgb(209, 213, 255);
 }
 #card-ste{
-    border: 3px solid #c5c5c5;
-    background-color: #c5c5c5;
+    border: 3px solid #dddddd;
+    background-color: #dddddd;
 }
-
+.team-area{
+    background-color: #f9f9f9;
+    padding-bottom: 40px;
+}
 .team-titulo {
     margin-top: 40px;
 }
@@ -140,7 +148,7 @@ body{
     background-size: cover;
 }
 #pattern-img {
-    background-image: url('../storage/banner/banner-dark.jpg') !important;
+    background-image: url('../storage/banner/banner-amarelo.png') !important;
     background-position: end;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -149,7 +157,7 @@ body{
 
 #pattern-img h4,
 #pattern-img p {
-    color: #f9f9f9;
+    color: black;
 }
 
 #pattern-img h4 {
@@ -166,7 +174,7 @@ body{
     margin-right: auto;
     margin-top: 30px;
     background-color: #ffc21c;
-     color: white;
+     color: black;
      text-transform: uppercase;
      border-radius: 30px;
      border: 3px solid transparent;
@@ -176,7 +184,7 @@ body{
  }
  #apply-btn:hover {
      text-decoration: none;
-     color: white;
+     color: black;
      background-color: transparent;
      border-color: #ffc21c;
  }
