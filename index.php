@@ -10,7 +10,7 @@ require __DIR__ . "/sistema/bloqueio.php";
   <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
 
 
-  <!--Carousel-->
+  <!--Carousel
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -38,42 +38,13 @@ require __DIR__ . "/sistema/bloqueio.php";
       <span class="sr-only">Next</span>
     </a>
   </div>
-
-
-
-
-
-
-
-
-  <!--Carousel-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner ">
-        <div class="carousel-item active">
-          <img src="views/_resources/storage/banner/banner1.png" class="d-block " id="Slide 1" alt="..." style="height: 100%;">
-        </div>
-        <div class="carousel-item">
-          <img src="views/_resources/storage/banner/banner2.png" class="d-block" id="Slide 2" alt="..." style="height: 100%;">
-        </div>
-        <div class="carousel-item">
-          <img src="views/_resources/storage/banner/banner3.png" class="d-block" id="Slide 3" alt="..." style="height: 100%;">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
 -->
   <!--lanches-->
   <div class="lanche-area">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center titulo-area">Conheça alguns lanches nossos</h1>
+          <h1 class="text-center titulo-area"><i class="bi bi-caret-right-fill"></i>Veja os nossos lanches<i class="bi bi-caret-left-fill"></i></h1>
         </div>
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
@@ -133,10 +104,11 @@ require __DIR__ . "/sistema/bloqueio.php";
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center titulo-area team-titulo">Nossa equipe</h2>
+        <h1 class="text-center titulo-area"><i class="bi bi-caret-right-fill"></i>Conheça nossa equipe<i class="bi bi-caret-left-fill"></i></h1>
         </div>
-        <div class="col-md-3">
-          <div class="card time mt-5">
+
+        <div class="col-md-3" >
+          <div class="card time mt-5" id="card-le">
             <img src="views/_resources/storage/time/equipe1.jpeg" class="card-img-top" alt="imagem de perfil 1">
             <div class="card-body">
               <h5 class="card-title">Letícia Farias</h5>
@@ -145,7 +117,7 @@ require __DIR__ . "/sistema/bloqueio.php";
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card time mt-5">
+          <div class="card time mt-5" id="card-la">
             <img src="views/_resources/storage/time/equipe2.jpeg" class="card-img-top" alt="imagem de perfil 2">
             <div class="card-body">
               <h5 class="card-title">Larissa Farias</h5>
@@ -154,7 +126,7 @@ require __DIR__ . "/sistema/bloqueio.php";
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card time mt-5">
+          <div class="card time mt-5" id="card-jo">
             <img src="views/_resources/storage/time/equipe3.jpeg" class="card-img-top" alt="imagem de perfil 3">
             <div class="card-body">
               <h5 class="card-title">João Vitor</h5>
@@ -162,8 +134,9 @@ require __DIR__ . "/sistema/bloqueio.php";
             </div>
           </div>
         </div>
-        <div class="col-md-3 mt-5">
-          <div class="card time time-ste">
+
+        <div class="col-md-3">
+          <div class="card time mt-5" id="card-ste">
             <img src="views/_resources/storage/time/equipe4.jpeg" class="card-img-top" alt="imagem de perfil 4">
             <div class="card-body">
               <h5 class="card-title">Stephanie Amorim</h5>

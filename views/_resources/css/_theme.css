@@ -10,13 +10,8 @@
 .roboto-slab {
     font-family: 'Roboto Slab',sans-serif;
 }
-.navbar-dark .navbar-toggler-icon {
-    background-color: #ffc21c !important;
-    padding: 20px;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/56/56763.png') !important;
-    background-size: 18px;
-    border-radius: 10px;
-}
+
+
 
 .close-secret{
     position: fixed;

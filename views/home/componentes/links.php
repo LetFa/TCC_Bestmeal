@@ -50,5 +50,5 @@
                 class="btn btn-dark btn-sm" role="button">Sair</a>
             </div>
        <?php } ?>
-    </ul>
+</ul>
     

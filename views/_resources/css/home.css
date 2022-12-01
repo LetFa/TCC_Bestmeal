@@ -1,3 +1,9 @@
+body{
+    font-family: 'arial', sans-serif;
+}
+
+
+
 /*carousel*/
 .carousel-item img {
     width: 100%;
@@ -15,6 +21,7 @@
 .active {
     color: #ffc21c !important;
 }
+
 
 .navbar-nav li .menu {
     border-radius: 10px;
@@ -48,11 +55,14 @@
 .titulo-area {
     margin-top: 100px;
     margin-bottom: 40px;
-    font-family: 'Uchen', serif;
+    font-size: 20pt;
+}
+.titulo-area i{
+    color: #40c351;
 }
 
 .lanche-area {
-    background-color: #f9f9f9;
+    background-color: rgb(222, 255, 216);
     margin-top: -50px !important;
 }
 
@@ -73,6 +83,25 @@
 }
 
 /*team-area*/
+
+#card-le{
+    border: 3px solid pink;
+    background-color: pink;
+}
+#card-la{
+    border: 3px solid rgb(255, 175, 175);
+    background-color: rgb(255, 175, 175);
+}
+
+#card-jo{
+    border: 3px solid rgb(147, 158, 255);
+    background-color: rgb(147, 158, 255);
+}
+#card-ste{
+    border: 3px solid #c5c5c5;
+    background-color: #c5c5c5;
+}
+
 .team-titulo {
     margin-top: 40px;
 }
