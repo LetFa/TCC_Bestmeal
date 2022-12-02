@@ -6,8 +6,6 @@ require_once 'conexao_mysql.php';
 require_once 'sql.php';
 require_once 'mysql.php';
 
-
-
 foreach($_POST as $indice => $dado){
     $$indice = limparDados($dado);
 }
@@ -16,23 +14,23 @@ foreach($_GET as $indice => $dado){
     $$indice = limparDados($dado);
 }
 
-if(isset($_FILES['foto']))
-{
-   echo 'lanche';
-   $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
-   $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-   $target_dir = '../views/_resources/storage/lanches/'; //Diretório para uploads 
-   move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
-   
-   
-} 
-
-$foto = $target_dir.$foto_name;
-
-$id = (int)$id;
-
 switch($acao){ 
     case 'insert':
+        if(isset($_FILES['foto']))
+        {
+        echo 'lanche';
+        $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
+        $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+        $target_dir = '../views/_resources/storage/lanches/'; //Diretório para uploads 
+        move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
+        
+        
+        } 
+
+        $foto = $target_dir.$foto_name;
+
+        $id = (int)$id;
+
         $dados = [
             'nome' => $nome,
             'preco' => $preco,
@@ -50,6 +48,29 @@ switch($acao){
         break;
 
         case 'update':
+            foreach($_POST as $indice => $dado){
+                $$indice = limparDados($dado);
+            }
+    
+            foreach($_GET as $indice => $dado){
+                $$indice = limparDados($dado);
+            }
+    
+            if(isset($_FILES['foto']))
+            {
+            echo 'lanche';
+            $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
+            $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+            $target_dir = '../views/_resources/storage/lanches/'; //Diretório para uploads 
+            move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
+            
+            
+            } 
+    
+            $foto = $target_dir.$foto_name;
+    
+            $id = (int)$id;
+
             $dados = [
                 'nome' => $nome,
                 'preco' => $preco,
@@ -68,8 +89,22 @@ switch($acao){
              );
 
              break;
+
+        case 'delete':
+            $criterio = [
+                ['id', '=', $id]
+            ];
+
+            deleta(
+                'produtos',
+                $criterio
+            );
+
+            header('location: ../pedido.php');
+
+            break;
 }
 
-header('location: ../criar.php');
+header('location: ../pedido.php');
 ?>
 
