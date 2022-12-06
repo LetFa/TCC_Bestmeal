@@ -15,7 +15,8 @@ require __DIR__ . "/sistema/bloqueio.php";
       <div class="row">
         <div class="col-md-6 text-home">
           <h1>Sejam Bem - Vindo(a)!</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, rem. Laboriosam sunt quas officia, laborum corporis earum iste rem, ipsum saepe distinctio quis sed necessitatibus libero neque molestiae numquam ut!</p>
+          <p>Você deve estar se perguntando: Quem desenvolve uma plataforma, onde o cliente é o próprio ? <br>
+          E por aqui eu digo, somos nós, o Bestmeal! Desenvolvido em 2022, por uma equipe especializada, este projeto tende-se à apresentar uma variedade de escolhas, onde você cliente, é o próprio </p>
           <button class="btn btn-dark"><i class="bi bi-arrow-right"></i> Saiba mais</button>
         </div>
         <div class="col-md-6 img-chefe">
