@@ -27,50 +27,42 @@ if(isset($_FILES['foto']))
 } 
 
 
-$ingredientes = $_POST['ingredientes'];
-echo '<p>teste: '.$ingredientes;
-
-
-$id = (int)$id;
-
 switch($acao){ 
     case 'insert':
-        $dados = [
-            'cod_pedido'    => $cod_pedido,
-            'cod_usuario'    => $_SESSION['login']['usuario']['cod_usuario'],
-            'cod_produto'    => $cod_produto,
-        ];
+        if(isset($_SESSION['pedido']))
+        {
+            $dados_pedido = [            
+                'cod_usuario'   => $_SESSION['login']['usuarios']['id'],
+                'data_hora'     => date('Y-m-d H:i:s')
+            ];
 
-        insere(
-            'pedido_itens',
-            $dados
-        );
-        
+            $cod_pedido_insert = insere(
+                'pedido',
+                $dados_pedido
+            );     
+            
+
+                    
+            foreach($_SESSION['pedido'] as $cod_produto)
+            {
+                echo "Cod pedido:".$cod_pedido_insert."<br>";
+                $dados_pedido_item = [
+                    'cod_pedido'    => $cod_pedido_insert,                    
+                    'cod_produto'    => $cod_produto
+                ];
+                insere(
+                    'pedido_item',
+                    $dados_pedido_item
+                );
+            }
+
+            unset($_SESSION['pedido']);
+        }            
 
         break;
 
-        case 'update':
-            $dados = [
-                'cod_pedido'    => $cod_pedido,
-                'cod_usuario'    => $_SESSION['login']['usuario']['cod_usuario'],
-                'cod_produto'    => $cod_produto,
-            ];
-    
-             $criterio = [
-                ['cod', '=', $id]
-             ];
-
-             atualiza(
-                'pedido_itens',
-                $dados,
-                $criterio
-             );
-
-             break;
-
-
 }
 
-header('location: ../index.php');
+header('location: ../index.php?success=create');
 ?>
 

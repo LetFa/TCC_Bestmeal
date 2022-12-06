@@ -14,11 +14,9 @@
   }
 
 .area-login{
-    margin-top: -50px !important;
-    margin: 0;
-    padding: 150px;
+    padding-top: 8rem;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url('../storage/banner/tela-login.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +25,5 @@
 .formulario-login{
     background-color: transparent;
     background-color: rgba(187, 187, 187, 0.411);
+    padding: 20px 20px;
 }

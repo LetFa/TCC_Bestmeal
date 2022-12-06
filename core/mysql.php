@@ -1,6 +1,6 @@
 <?php
 
-function insere(string $entidade, array $dados) : bool
+function insere(string $entidade, array $dados) : int
 {
    $retorno = false;
 
@@ -19,17 +19,18 @@ function insere(string $entidade, array $dados) : bool
   eval('mysqli_stmt_bind_param($stmt, \''. implode('', $tipo) . '\',$' . implode(', $', array_keys($dados)) . ');');
 
   mysqli_stmt_execute($stmt);
-
+  
+  $id_insert =  mysqli_insert_id($conexao);
   $retorno = (boolean) mysqli_stmt_affected_rows($stmt);
-
   $_SESSION['errors'] = mysqli_stmt_error_list($stmt);
 
   
   mysqli_stmt_close($stmt);
-
+  
   desconecta($conexao);
 
-  return $retorno;
+  return $id_insert;
+  //return $retorno;
 
 }
 
@@ -167,7 +168,7 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
 
 
   $instrucao = select($entidade, $campos, $coringa_criterio, $ordem);
-
+  //echo $instrucao;
   $conexao = conecta();
 
   $stmt = mysqli_prepare($conexao, $instrucao);
@@ -198,7 +199,7 @@ function buscar(string $entidade, array $campos = ['*'], array $criterio = [], s
   $retorno = $retorno;
   
 
-  $_SESSION['nome'] = $retorno[0]['nome'];
+  //$_SESSION['nome'] = $retorno[0]['nome'];
 
   return $retorno;
 

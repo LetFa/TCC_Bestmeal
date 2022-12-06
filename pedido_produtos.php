@@ -8,14 +8,9 @@
     //session_start();
     foreach($_GET as $indice => $dado){
         $$indice = limparDados($dado);
-    }   
-    
-    if(isset($acao) && $acao = 'delete') {
-        unset($_SESSION['pedido'][$id]);
-    }else if(isset($id)){
-            $_SESSION['pedido'][$id] = $id; 
-    }
-    $total  = 0;
+    }      
+ 
+
 ?>
 
 <!doctype html>
@@ -40,37 +35,22 @@
 
 
                     <?php
-                        if(isset($_SESSION['pedido']))
-                        {        
-                            //$total  = 0;
-                            foreach($_SESSION['pedido'] as $pedido){            
-                                $produtos = buscar(
-                                    'produtos',
-                                    ['*'],
-                                    [['id', '=', $pedido]]
-                                );
-                                //echo $pedido;
-                            // echo $produtos[0]['nome'];
-                            // echo $produtos[0]['preco'];
-                            // echo $produtos[0]['ingredientes'];
-                                
-                                $total += (float)$produtos[0]['preco'];
-                                echo  "<br>";
-                            }
-                            //echo $total;
-                        }
+                        $total  = 0;
+                        $produtos = buscar(
+                            'pedido_item',
+                            ['cod_pedido',
+                             'cod_produto',
+                             '(select nome from produtos where produtos.id = cod_produto) as nome_produto',
+                             '(select foto from produtos where produtos.id = cod_produto) as foto',
+                             '(select preco from produtos where produtos.id = cod_produto) as preco'
+                             
+                            ],
+                            [['cod_pedido', '=', $cod_pedido]]
+                        );
                     ?>
                     <?php
-                    
-                        if(isset($_SESSION['pedido']))
-        
-                                foreach($_SESSION['pedido'] as $pedido):     
-                                    $produtos = buscar(
-                                        'produtos',
-                                        ['*'],
-                                        [['id', '=', $pedido]]
-                                    );                         
-                                
+                        foreach($produtos as $produto):   
+                            $total += (float)$produtos[0]['preco'];                                  
                     ?>
 
         
@@ -78,11 +58,10 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <?php echo $produtos[0]['nome'] ?>
+                                    <?php echo $produto['nome_produto'] ?>
                                 </h4>
-                                <p class="card-text p-y-1 mt-3">Descrição: <?php echo $produtos[0]['ingredientes'];?></p>
-                                <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produtos[0]['preco'];?></h6>
-                                <button class="btn btn-danger" type="submit"><a style="text-decoration: none;color:white;" href="pedido.php?acao=delete&id=<?php echo $produtos[0]['id']?>">Excluir</a></button>
+                                <h6 class="card-subtitle text-success text-center mt-3">Valor R$<?php echo $produto['preco'];?></h6>
+                                
                             </div>
                         </div>
                     </div>      
