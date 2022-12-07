@@ -10,7 +10,7 @@
         <div class="container">
             <section class="text-center text-lg-start">
                 <div class="card mb-3 formulario-cadastrar">
-                    <img src="views/_resources/storage/banner/mini-login.png" alt="logo">
+                    <img src="./views/_resources/storage/logo/bestmeal-logo.png" class="w-50"  alt="logo">
                     <?php
                     require_once 'includes/funcoes.php';
                     require_once 'core/conexao_mysql.php';
@@ -34,7 +34,7 @@
                     }
 
                     ?>
-                    <form method="post" action="core/usuario_repositorio.php" style="width: 70%; margin: auto;margin-top:-50px;">
+                    <form method="post" action="core/usuario_repositorio.php" class="mt-5" style="width: 70%; margin: auto;margin-top:-50px;">
                         <input type="hidden" name="acao" value="<?php echo empty($id) ? 'insert' : 'update' ?>">
                         <input type="hidden" name="id" value="<?php echo $entidade['id'] ?? '' ?>">
                         <div class="form-group">

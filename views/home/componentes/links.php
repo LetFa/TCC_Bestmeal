@@ -37,7 +37,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="av-link small text-dark menu" href="pedidos.php">Usuários</a>
+                <a class="av-link small text-dark menu" href="pedidos.php">Pedidos</a>
             </li>
 
                 

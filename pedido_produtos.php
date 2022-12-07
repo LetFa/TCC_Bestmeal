@@ -50,8 +50,8 @@ foreach ($_GET as $indice => $dado) {
                 );
                 ?>
                 <?php
-                foreach ($produtos as $produto) :
-                    $total += (float)$produtos[0]['preco'];
+                foreach ($produtos as $produto) :                    
+                    $total += (float)str_replace(',','.',$produto['preco']);
                 ?>
 
 

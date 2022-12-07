@@ -21,7 +21,7 @@ include 'sistema/valida_login.php'
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center mt-5">Listagem de usuário</h2>
+                <h2 class="text-center mt-5">Listagem de pedidos</h2>
 
 
                 <?php
@@ -49,7 +49,7 @@ include 'sistema/valida_login.php'
                         'cod_usuario',
                         '(select nome from usuarios where usuarios.id = cod_usuario) as nome',
                         'data_hora',
-                        '(select sum(preco) from pedido_item inner join produtos on produtos.id = pedido_item.cod_produto where pedido_item.cod_pedido = cod) as total'
+                        '(select sum(preco) from pedido_item inner join produtos on produtos.id = pedido_item.cod_produto where pedido_item.cod_pedido = pedido.cod) as total'
                     ],
                     $criterio
                 );
@@ -75,7 +75,7 @@ include 'sistema/valida_login.php'
                                 <td><?php echo $entidade['cod'] ?></td>
                                 <td><?php echo $entidade['nome'] ?></td>
                                 <td><?php echo $data ?></td>
-                                <td><?php echo $entidade['total'] ?></td>
+                                <td><?php echo 'R$ '. $entidade['total'] ?></td>
                                 <td>
                                     <button class="btn btn-warning">
                                         <a style="text-decoration: none;color:white;" href='pedido_produtos.php?cod_pedido=<?php echo $entidade['cod'] ?>'>Produtos</a>
