@@ -1,5 +1,7 @@
 <?php
+
 require __DIR__ . "/sistema/bloqueio.php";
+
 ?>
 
 <!doctype html>
@@ -9,10 +11,6 @@ require __DIR__ . "/sistema/bloqueio.php";
 <body>
 
   <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
-
-
-
-
 
   <div class="container mt-5" id="lanches">
     <h1 class="text-center"><i class="bi bi-caret-right-fill"></i> Faça seu pedido <i class="bi bi-caret-left-fill"></i></h1>
@@ -68,8 +66,8 @@ require __DIR__ . "/sistema/bloqueio.php";
     </div>
   </div>
 
-
   <?php require __DIR__ . "/views/home/componentes/footer.php" ?>
+  
 </body>
 
 </html>

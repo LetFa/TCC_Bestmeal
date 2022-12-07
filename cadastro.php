@@ -1,5 +1,7 @@
 <?php
+
 session_start();
+
 ?>
 
 
@@ -67,14 +69,14 @@ session_start();
                                 <input class="form-control" type="text" require="required" id="ingredientes" name="ingredientes" placeholder="Ingredientes" value="<?php echo $entidade['ingredientes'] ?? '' ?>">
                             </div>
 
-                   
-                    <div class="form-group">
-                        <input type="file" name="foto" accept="image/*">
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-success" type="submit">Próximo</button>
-                    </div>
-                    </form>
+
+                            <div class="form-group">
+                                <input type="file" name="foto" accept="image/*">
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-success" type="submit">Próximo</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

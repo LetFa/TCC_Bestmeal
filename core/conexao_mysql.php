@@ -21,4 +21,3 @@
     {
         mysqli_close($conexao);
     }
-?>

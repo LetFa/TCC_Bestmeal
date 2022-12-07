@@ -37,6 +37,3 @@ function update_teste($id, $nome, $email) : void
    atualiza('usuario', $dados, $criterio);
 
 }
-
-
-?>

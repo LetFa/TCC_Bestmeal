@@ -1,5 +1,7 @@
 <?php
+
 require __DIR__ . "/sistema/bloqueio.php";
+
 ?>
 
 <!doctype html>
@@ -9,10 +11,6 @@ require __DIR__ . "/sistema/bloqueio.php";
 <body>
 
   <?php require __DIR__ . '/views/home/componentes/navbar.php' ?>
-
-
-
-
 
   <div class="container mt-5" id="lanches">
     <h1 class="text-center"><i class="bi bi-caret-right-fill"></i> Faça seu pedido <i class="bi bi-caret-left-fill"></i></h1>
@@ -55,7 +53,7 @@ require __DIR__ . "/sistema/bloqueio.php";
                 <div class="btn-group">
                   <form action="pedido.php" method="GET">
                     <input name="produtoId" id="produtoId" type="hidden">
-                    <button type="submit"  class="btn btn-sm btn-warning text-decoration"><a href="#" style="text-decoration:none;color:black;">Comprar</a></button>
+                    <button type="submit" class="btn btn-sm btn-warning text-decoration"><a href="#" style="text-decoration:none;color:black;">Comprar</a></button>
                   </form>
                   <p class="card-text text-success" style="margin-left: 1rem;font-size:15pt;"><?php echo $produtos['preco'] ?></p>
                 </div>

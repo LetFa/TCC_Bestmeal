@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 require_once '../sistema/valida_login.php';
 require_once '../includes/funcoes.php';
@@ -19,10 +20,10 @@ switch($acao){
         if(isset($_FILES['foto']))
         {
         echo 'lanche';
-        $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
-        $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-        $target_dir = '../views/_resources/storage/lanches/'; //Diretório para uploads 
-        move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
+        $ext = strtolower(substr($_FILES['foto']['name'],-4)); 
+        $foto_name = date("Y.m.d-H.i.s") . $ext; 
+        $target_dir = '../views/_resources/storage/lanches/'; 
+        move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name);
         
         
         } 
@@ -59,10 +60,10 @@ switch($acao){
             if(isset($_FILES['foto']))
             {
             echo 'lanche';
-            $ext = strtolower(substr($_FILES['foto']['name'],-4)); //Pegando extensão do arquivo
-            $foto_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-            $target_dir = '../views/_resources/storage/lanches/'; //Diretório para uploads 
-            move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); //Fazer upload do arquivo
+            $ext = strtolower(substr($_FILES['foto']['name'],-4)); 
+            $foto_name = date("Y.m.d-H.i.s") . $ext; 
+            $target_dir = '../views/_resources/storage/lanches/'; 
+            move_uploaded_file($_FILES['foto']['tmp_name'], $target_dir.$foto_name); 
             
             
             } 
@@ -106,5 +107,3 @@ switch($acao){
 }
 
 header('location: ../pedido.php');
-?>
-

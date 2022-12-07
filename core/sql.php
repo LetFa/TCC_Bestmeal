@@ -1,7 +1,5 @@
 <?php 
 
-
-
 function insert(string $entidade, array $dados) : string 
 {
      $instrucao = "INSERT INTO {$entidade}";
@@ -70,5 +68,3 @@ function select(string $entidade, array $campos, array $criterio = [], string $o
    }
     return $instrucao;
 }
-
-?>

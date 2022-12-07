@@ -4,4 +4,5 @@
   if(!isset($_SESSION['login'])){
     header("location:".SITE."/login_formulario.php");
   }
+  
 ?>

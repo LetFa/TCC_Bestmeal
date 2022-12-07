@@ -75,8 +75,7 @@
                     }
                 }
 
-                //header('location: ../index.php?logado=sucesso');
-                //die;
+              
                 break;
 
         case 'logout':
@@ -125,8 +124,3 @@
             break;
     }
     header('location: ../index.php');
-?>
-
-
-
-
